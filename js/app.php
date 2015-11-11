@@ -109,12 +109,13 @@ video_carrera = {
 
 
 var player;
+var playerb;
 vid = 'inicio';
 //construye el primer video
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '250',
-        width: '444',
+        height: '360',
+        width: '480',
 		playerVars: { 
 			rel : 0,
 			start: 0,
@@ -134,14 +135,34 @@ function onYouTubeIframeAPIReady() {
 		  'onStateChange': onPlayerStateChange
 		}
   });
+  
+  playerb = new YT.Player('playertercera', {
+        height: '250',
+        width: '444',
+		playerVars: { 
+			rel : 0,
+			start: 0,
+			enablejsapi : 1, 
+			autoplay: 0, 
+			disablekb: 1,
+			controls: 0 , 
+			origin : '"<?php echo get_bloginfo('url')?>"' , 
+			iv_load_policy : 3 , 
+			modestbranding : 1 , 
+			showinfo : 0 , 
+			//hd: 0
+		},
+        videoId: videoinicio,
+		events: {
+		  'onReady': onPlayerReadytercera,
+		  'onStateChange': onPlayerStateChangetercera
+		}
+  });
+  
 }
 
-
-
 function onPlayerReady(event) {
-	//event.target.playVideo();
-	
-	
+	//event.target.playVideo();	
 }
 
 function onPlayerStateChange(event) {
@@ -233,6 +254,20 @@ function onPlayerStateChange(event) {
 	}
 	
 	
+}
+
+
+//var playerb;
+/* function onYouTubeIframeAPIReady() {
+    
+} */
+
+function onPlayerReadytercera(event) {
+	//event.target.playVideo();	
+}
+
+function onPlayerStateChangetercera(event) {
+	//event.target.playVideo();	
 }
 
 /* function time(){
@@ -411,18 +446,23 @@ function cambiaterceracam(){
 	$('#tercera').addClass('hidden');
 	$('#primera').removeClass('hidden');
 	
+	$('#player').addClass('hidden');
+	$('#playertercera').removeClass('hidden');
+	
 	//console.log(vid);
 	currenttime = player.getCurrentTime();
 	
 	if(vid == 'paso-1'){
-		player.cueVideoById(video_carrera.tra1_ , currenttime , 'small');
-		player.setPlaybackQuality('small');
+		playerb.cueVideoById(video_carrera.tra1_ , currenttime , 'small');
+		playerb.setPlaybackQuality('small');
+		console.log('cargué la cam 2');
+		playerb.playVideo();
 	}
 	
 	
-	player.playVideo();
 	
 }
+
 
 function hb1(lugar){
 	var place = lugar;
