@@ -1,6 +1,10 @@
 <?php get_header('carrera')?>
 <?php get_template_part('js/app')?>
 
+<audio src="<?php echo get_bloginfo('template_directory')?>/sounds/bg.mp3" id="bgmusic" loop>
+<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+<embed src="<?php echo get_bloginfo('template_directory')?>/sounds/bg.mp3" width="180" height="90" hidden="true" />
+</audio>
 
 <?php 
 $g = $_GET['g'];
@@ -355,7 +359,7 @@ if($g == 'm'){
 <div id="walker" class="hidden">
 	
     <div id="segundacam">
-    	<div id="primera" class="hidden"><img src="<?php echo get_bloginfo('template_directory')?>/images/primera.png" alt=""></div>
+    	<div id="primera" class="hidden" onClick="cambiaprimeracam()"><img src="<?php echo get_bloginfo('template_directory')?>/images/primera.png" alt=""></div>
     	<div id="tercera" class="hidden" onClick="cambiaterceracam()"><img src="<?php echo get_bloginfo('template_directory')?>/images/tercera.png" alt=""></div>
     </div>
 
@@ -372,7 +376,7 @@ if($g == 'm'){
 
 <div class="embed-responsive embed-responsive-16by9">
 	<div id="player" data-v="inicio" class="embed-responsive-item"></div>
-    <div id="playertercera" data-v="inicio" class="embed-responsive-item"></div>
+    <div id="playertercera" class="embed-responsive-item hidden"></div>
 </div>
 
 <div class="sharer pull-right">
