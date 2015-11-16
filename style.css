@@ -701,4 +701,95 @@ footer img{ margin-right:15px}
 	
 	#slidecaption h2{ font-size:36px}
 	#slidecaption p{ font-size:16px}
+	
+	.lc { width: 140px !important; }
+	.lcc { width: 70px !important; }
+	.navbar-right.carr{ float:right !important}
+	
+	.page-id-4 .sharer{
+		
+		display:none;
+		
+		float: none !important;
+		width: 100% !important;
+		margin: 0;
+		bottom: 20px;
+		text-align:left
+	}
+	
+	.page-id-4 .sharer h4{
+		display: inline;
+		text-align: left;
+	}
+	
+	.page-id-4 .sharer .fb-like { float: right}
+	
+	#s1 img{ width:100px !important}
+	
+	#walker #tramoactual {
+    font-size: 25px;
+	}
+	
+	#walker {
+    bottom: 64px;
+    	margin-left: 10px;
+	}
+	
+}
+
+@media (max-width: 768px) and (orientation: landscape) { .dg-wrapper { width: 100% }
+    .modal-body { padding: 15px; }
+	
+	#slidecaption h2{ font-size:36px}
+	#slidecaption p{ font-size:16px}
+	
+	.lc { width: 140px !important; }
+	.lcc { width: 70px !important; }
+	.navbar-right.carr{ float:right !important}
+	
+	.page-id-4 .sharer{
+		
+		display:none;
+		
+		float: none !important;
+		width: 100% !important;
+		margin: 0;
+		bottom: 20px;
+		text-align:left
+	}
+	
+	.page-id-4 .sharer h4{
+		display: inline;
+		text-align: left;
+	}
+	
+	.page-id-4 .sharer .fb-like { float: right}
+	
+	#s1 img{ width:100px !important}
+	
+	#walker #tramoactual {
+    font-size: 25px;
+	}
+	
+	#walker {
+    bottom: 64px;
+    	margin-left: 10px;
+	}
+	
+	.choose h1 {
+    font-size: 20px;
+    width: 170px;
+    line-height: 155%;
+}
+
+.choose h1 span {
+    width: 28px;
+    padding: 5px;
+}
+
+#segundacam{
+    position: absolute;
+    bottom: 60px;
+    z-index: 1; right:0;
+}
 }

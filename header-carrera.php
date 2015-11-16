@@ -72,18 +72,18 @@ jQuery( document ).ready(function() {
 
 <header class="navbar-fixed-top">
 	<a href="<?php echo get_bloginfo('url')?>">
-    	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo-cuprum.png" alt="">
+    	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo-cuprum.png" class="lc" alt="">
     </a>
         
     <img src="<?php echo get_bloginfo('template_directory')?>/images/logo-corrida.png" class="lcc" alt="">
     
-    <div class="navbar-right">
+    <div class="navbar-right carr">
     	
         <div class="ownaporte">
-        	<div class="filler"></div>
+        	<div class="filler hidden-xs"></div>
         	<div class="heart">
-            	<img src="<?php echo get_bloginfo('template_directory')?>/images/corazon.png" alt="">
-                <span id="aporteactual">0</span>
+            	<img src="<?php echo get_bloginfo('template_directory')?>/images/corazon.png" class="hidden-xs" alt="">
+                <span id="aporteactual"><div class="fa fa-heart fa-fw"></div> 0</span>
                 <b>Tu Aporte</b>
             </div>
         </div>

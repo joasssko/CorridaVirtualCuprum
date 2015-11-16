@@ -1,5 +1,10 @@
 <?php get_header('carrera')?>
-<?php get_template_part('js/app')?>
+
+<?php if(wp_is_mobile()){?>
+	<?php get_template_part('js/app-mobile')?>
+<?php }else{?>
+	<?php get_template_part('js/app')?>
+<?php }?>
 
 <audio src="<?php echo get_bloginfo('template_directory')?>/sounds/bg.mp3" id="bgmusic" loop>
 <p>If you are reading this, it is because your browser does not support the audio element.     </p>
@@ -15,34 +20,34 @@ if($g == 'm'){
     	<img src="<?php echo get_bloginfo('template_directory')?>/images/play.png" alt="" onClick="iniciar();">
     </div>
     <div id="s2" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
             <h1 onClick="hb1($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Universidad de Chile</h1>
         </div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
             <h1 onClick="hb2($(this).text())">Nueva York <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     
     <div id="s3" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
 	    	<h1 onClick="hc1($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Lastarria</h1>
     	</div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
         	<h1 onClick="hc2($(this).text())">Paris y Londres <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
     	</div>
     </div>
     <div id="s4" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
         	<h1 onClick="hc3($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Plaza Constitución</h1>
     	</div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
         	<h1 onClick="hc4($(this).text())">San Diego <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
     	</div>
     </div>
     
     
     <div id="s5" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
         	<h1 onClick="hd1($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Bellas Artes</h1>
     	</div>
         <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
@@ -50,26 +55,26 @@ if($g == 'm'){
     	</div>
     </div>
     <div id="s6" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
         	<h1 onClick="hd3($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Paris y Londres II</h1>
     	</div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
         	<h1 onClick="hd4($(this).text())">Edificio estacionamientos <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
     	</div>
     </div>
     <div id="s7" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
         	<h1 onClick="hd5($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Calle Constitución</h1>
     	</div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">		
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
         	<h1 onClick="hd6($(this).text())">Tribunales de justicia <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
     	</div>
     </div>
     <div id="s8" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
         	<h1 onClick="hd7($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Paseo Bulnes</h1>
     	</div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
         	<h1 onClick="hd8($(this).text())">Parque Almagro <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
@@ -186,61 +191,61 @@ if($g == 'm'){
     	<img src="<?php echo get_bloginfo('template_directory')?>/images/play.png" alt="" onClick="iniciar();">
     </div>
     <div id="s2" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
     		<h1 onClick="hb1($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Mercado Central</h1>
         </div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
     		<h1 onClick="hb2($(this).text())">Parque Forestal <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     
     <div id="s3" class="choose hidden">
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
             <h1 onClick="hc1($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Skate Park Los Reyes</h1>
         </div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
     		<h1 onClick="hc2($(this).text())">Puente <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     <div id="s4" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
     		<h1 onClick="hc3($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> La Chascona</h1>
         </div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
     		<h1 onClick="hc4($(this).text())">Parque de las Esculturas <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     
     
     <div id="s5" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
 	    	<h1 onClick="hd1($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Barrio Yungay</h1>
         </div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
     		<h1 onClick="hd2($(this).text())">Barrio Concha y Toro <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
 	    </div>
     </div>
     <div id="s6" class="choose hidden">
-	    <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+	    <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
     		<h1 onClick="hd3($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> La vega</h1>
         </div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
     		<h1 onClick="hd4($(this).text())">Recoleta <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     <div id="s7" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
     		<h1 onClick="hd5($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Subida San Cristóbal</h1>
         </div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
     		<h1 onClick="hd6($(this).text())">Virgen San Cristóbal <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     <div id="s8" class="choose hidden">
-    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-left">
+    	<div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
 	        <h1 onClick="hd7($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Parque Bicentenario</h1>
         </div>
-        <div class="seleccion col-md-6 col-sm-6 col-lg-6 pull-right">
+        <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
     		<h1 onClick="hd8($(this).text())">Parque Alberto Hurtado <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
@@ -356,18 +361,24 @@ if($g == 'm'){
 </div>
 <?php }?>
 
+    <?php if(wp_is_mobile()){?>
+    <div id="segundacam" class=" pull-right">
+    	<div id="primera" class="hidden" onClick="cambiaprimeracam()"><img src="<?php echo get_bloginfo('template_directory')?>/images/1era-mobile.png" alt=""></div>
+    	<div id="tercera" class="hidden" onClick="cambiaterceracam()"><img src="<?php echo get_bloginfo('template_directory')?>/images/3era-mobile.png" alt=""></div>
+    </div>
 <div id="walker" class="hidden">
-	
+	<?php }else{?>
+<div id="walker" class="hidden">
     <div id="segundacam">
     	<div id="primera" class="hidden" onClick="cambiaprimeracam()"><img src="<?php echo get_bloginfo('template_directory')?>/images/primera.png" alt=""></div>
     	<div id="tercera" class="hidden" onClick="cambiaterceracam()"><img src="<?php echo get_bloginfo('template_directory')?>/images/tercera.png" alt=""></div>
     </div>
-
+    <?php }?>
 
 	<div id="tramoactual">
     	Plaza de Armas
     </div>
-    <div id="monkeyman">
+    <div id="monkeyman" class="hidden-xs">
     	<div id="base"></div>
         <div id="colors"></div>
         <div id="stiky"><img src="<?php echo get_bloginfo('template_directory')?>/images/stickyman.png" alt=""></div>
