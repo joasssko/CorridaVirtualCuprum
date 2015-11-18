@@ -43,15 +43,16 @@ $preunido = ($llevamos * 100)/$total;
 <div id="triangle">
 	<div class="container">
 		<div class="row">
-    		<h2>Cada Carrera Cuenta, Si Juntamos 17 millones Cuprum hará un gran Aporte.</h2>
+    		<h2>Si Juntamos 17 millones Cuprum hará una donación adicional.</h2>
             
             <div class="col-md-6 col-lg-6 col-sm-8 col-md-offset-3 col-lg-offset-3 col-sm-offset-2">
                 <div id="hearts">
                     <div class="base" style="width:<?php echo $preunido?>%;"></div>
                     <div class="mask"></div>
                 </div>
-                <p>Reunidos <span><?php echo number_format($llevamos, 0, ',', '.');?></span></p> 
+                <p>Llevamos <span><?php echo number_format($llevamos, 0, ',', '.');?></span></p> 
                 <p class="esp">No te quedes sin correr.</p>
+                <p class="esp">Cada Carrera Cuenta</p>
             </div>
         </div>
 	</div>
@@ -65,8 +66,8 @@ $preunido = ($llevamos * 100)/$total;
             	<figure>
                 	
                 	<figcaption>
-                    	<h3>¿Cómo Apoyar?</h3>
-                		<p>Se parte de las más de 10.000 personas que correrán este 28 de Noviembre por Santiago.</p>
+                    	<h3>¿Cómo Ayudar?</h3>
+                		<p>Puedes participar en la #CorridaCuprum junto a 10.000 corredores o en la #CorridaVirtual desde cualquier lugar.</p>
                 	</figcaption>
                     <img src="<?php echo get_bloginfo('template_directory')?>/images/box-1.jpg" class="img-responsive" alt="">
                 </figure>
@@ -76,8 +77,8 @@ $preunido = ($llevamos * 100)/$total;
             	<figure>
                 	
                 	<figcaption>
-                    	<h3>Ver Galeria 2014</h3>
-                		<p>Revísa aquí las mejores imágenes y momentos de las Corridas Cuprum Teletón anteriores.</p>
+                    	<h3>Galería de fotos</h3>
+                		<p>Revisa aquí imágenes y momentos de las anteriores Corridas Cuprum por la Teletón.</p>
                 	</figcaption>
                     <img src="<?php echo get_bloginfo('template_directory')?>/images/box-2.jpg" class="img-responsive" alt="">
                 </figure>
@@ -87,8 +88,8 @@ $preunido = ($llevamos * 100)/$total;
             	<figure>
                 	
                 	<figcaption>
-                    	<h3>Comparte tu corrida</h3>
-                		<p>Publica todas tus imágenes de la Corrida en tu Facebook en solo tres simples pasos.</p>
+                    	<h3>Comparte tus fotos</h3>
+                		<p>Aquí podrás solicitar que todas las fotos de la producción en que aparezcas, se publiquen en tu Facebook.</p>
                 	</figcaption>
                     <img src="<?php echo get_bloginfo('template_directory')?>/images/box-3.jpg" class="img-responsive" alt="">
                 </figure>
@@ -99,7 +100,7 @@ $preunido = ($llevamos * 100)/$total;
                 	
                 	<figcaption>
                     	<h3>Inscríbete</h3>
-                		<p>Participa junto a tu familia y amigos en los circuito de 5 y 10 kilómetros, te esperamos.</p>
+                		<p>Participa junto a tu familia y amigos en los 5 o 10 K. ¡Te esperamos a ti y a 10.000 corredores más!</p>
                 	</figcaption>
                     <img src="<?php echo get_bloginfo('template_directory')?>/images/box-4.jpg" class="img-responsive" alt="">
                 </figure>
@@ -116,6 +117,5 @@ $preunido = ($llevamos * 100)/$total;
         </div>
 	</div>
 </main>
-
 
 <?php get_footer()?>

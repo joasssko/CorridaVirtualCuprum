@@ -579,8 +579,12 @@ padding: 20% 0 0 0;
 
 .down{ cursor:pointer}
 
-.fbbb{ background-color:#1c3f97; font-family:akzidenz, helvetica, arial, sans-serif}
-.twww{ background-color:#0092f2 }
+.fbbb{background-color:#1c3f97; font-family:akzidenz, helvetica, arial, sans-serif; transition: all .3s ease-in;}
+.fbbb:hover{background-color:#163071;}
+.twww{background-color:#0092f2; transition: all .3s ease-in; }
+.twww:hover {background-color: #027FD2; }
+a.returned{}
+a.returned:hover{}
 
 main {
     background-image: url(images/main.png);
@@ -662,12 +666,7 @@ main figure figcaption p{ color:#fff; font-family:open sans, helvetica, arial, s
 .choose{background-color:rgba(26, 54, 104 , .8); position:fixed; top: 0; bottom:0 ; left:0 ; right: 0}
 .meta{background-color:rgba(26, 54, 104 , .9); position:fixed; top: 0; bottom:0 ; left:0 ; right: 0}
 	
-.insmeta h1 {
-    font-family: akzidenz, helvetica, arial, sans-serif;
-    font-weight: 300;
-    font-size: 55px;
-    text-transform: none;
-}
+.insmeta h1 {font-family: akzidenz, helvetica, arial, sans-serif; font-weight: 300; font-size: 55px; text-transform: none; margin-top: 0; margin-bottom: 0; }
 	
 .meta h2{background-color: #e63039;
     display: inline-block;
@@ -679,11 +678,7 @@ main figure figcaption p{ color:#fff; font-family:open sans, helvetica, arial, s
     letter-spacing: 1px; text-transform:none;
 }	
 	
-.meta h3{	
-    font-size: 70px;
-    font-family: akzidenz, helvetica, arial, sans-serif;
-    font-weight: 300;
-}
+.meta h3 {font-size: 70px; font-family: akzidenz, helvetica, arial, sans-serif; font-weight: 300; margin-top: 5px; }
 
 .choose h1 {
 	font-family: akzidenz, helvetica, arial, sans-serif;
@@ -745,8 +740,10 @@ div#s4 .pull-right h1 {
     text-align: center;
 }
 
-.meta .insmeta{ margin:15% 0}
+.meta .insmeta{ margin:13% 0}
 .meta .result{ text-align:center; color:#fff;} 
+
+.iniciar{color:#fff;}
 
 
 /*************************************************************************************/
@@ -842,6 +839,8 @@ footer img{ margin-right:15px}
 	header .sharer{    clear: both;
     padding: 15px 0;
 }
+@media (min-width: 1400px){
+  #head .personajes img {max-width: none; }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) { .container { width: 100% }
@@ -903,19 +902,23 @@ footer img{ margin-right:15px}
     .carrusel .controls #sgteb { right: 10px; bottom: 210px }
     .modal .close { margin: 0; right: 10px; top: 0 }
     footer .socials li { margin-bottom: 15px }
+
+    .meta h3 {margin-bottom: 0; font-size: 50px; margin-top: 0; }
 	
-	#head .personajes img { max-width: 90%;}
-	
-	.infolcc img { padding: 18% 0 0 0; max-width: 260px;}
-	.selectors a { margin-bottom: 60px;}
-	.navbar-right{ float:right}
-	
-	.sharer{ clear:none !important; float:left;}
-	.bajar{ display:none;}
+    .page-id-4 footer small {padding: 0px 15px; }
+
+  	#head .personajes img { max-width: 90%;}
+  	
+  	.infolcc img { padding: 18% 0 0 0; max-width: 260px;}
+  	.selectors a { margin-bottom: 60px;}
+  	.navbar-right{ float:right}
+  	
+  	.sharer{ clear:none !important; float:left;}
+  	.bajar{ display:none;}
 }
 
 @media (max-width: 480px) { .dg-wrapper { width: 100% }
-    .modal-body { padding: 15px; }
+  .modal-body { padding: 15px; }
 	
 	#slidecaption h2{ font-size:36px}
 	#slidecaption p{ font-size:16px}
@@ -939,6 +942,8 @@ footer img{ margin-right:15px}
 		display: inline;
 		text-align: left;
 	}
+
+  .page-id-4 footer small {padding: 0px 15px; }
 	
 	.page-id-4 .sharer .fb-like { float: right}
 	
@@ -1000,12 +1005,12 @@ footer .lst{ text-align:center}
 #aviso{ display:none !important}
 
 #head .runners .personajes.pull-left , #head .runners .personajes.pull-right {
-    background-size: auto 100%;
+    background-size: cover;
 }
 
 .infolcc img {
-    padding: 18% 0 0 0;
-    max-width: 180px;
+    padding: 60px 0 0 0;
+    max-width: 145px;
 }
 
 .selectors a {
@@ -1106,3 +1111,7 @@ display:none;
     font-size: 30px;
 }
 }
+.volver a {
+display: inline-block;
+}
+#avisob{ display:none}

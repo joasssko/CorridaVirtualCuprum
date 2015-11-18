@@ -1,5 +1,5 @@
 <script>
-
+console.log('desktop');
 <?php $im = get_post_thumbnail_id('4');?>
 <?php $ima = wp_get_attachment_image_src($im , 'full');?>
 

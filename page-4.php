@@ -1,11 +1,20 @@
 <?php get_header('carrera')?>
 
-<?php if(wp_is_mobile()){?>
-	<?php get_template_part('js/app-mobile')?>
-<?php }else{?>
-	<?php get_template_part('js/app')?>
-<?php }?>
 
+<?php
+include 'mobiledetect.php';
+$detect = new Mobile_Detect;?>
+<?php if($detect->isIOS()){?>
+
+	<?php get_template_part('js/app-iphone')?>
+    
+<?php }elseif ($detect->isMobile() && !$detect->isIOS()){?>
+
+	<?php get_template_part('js/app-mobile')?>
+
+<?php }else{?>
+	
+	<?php get_template_part('js/app')?>
 <audio src="<?php echo get_bloginfo('template_directory')?>/sounds/bg.mp3" id="bgmusic" loop>
 <p>If you are reading this, it is because your browser does not support the audio element.     </p>
 <embed src="<?php echo get_bloginfo('template_directory')?>/sounds/bg.mp3" width="180" height="90" hidden="true" />
@@ -20,8 +29,13 @@ if($g == 'm'){
 	<div id="s1">
     
     	<div class="iniciar hidden-xs">
-        	<div class="infocarrera hidden-xs">Corre por el corazón de la ciudad y elige tu camino. Cada decisión que tomes sumará un numero diferente de corazones. Corre cuantas veces quieras cada carrera suma. Ahora elonga tu dedo mas deportista e...</div>	
-            <span class="btn btn-primary" onClick="iniciar();">Inicia la Carrera</span>
+        	<div class="infocarrera hidden-xs">Corre por el corazón de la ciudad y elige  caminos para seguir tu trayecto. Cada elección que tomes sumará un numero diferente de corazones.
+            <br>
+            
+            <strong>¡Necesitamos 17 millones de corazones!</strong>
+            </div>	
+            <span class="btn btn-primary" onClick="iniciar();">Inicia tu corrida</span>
+            <div>Corre cuantas veces quieras, cada carrera suma.</div>
             <div class="clear"></div>
             <small>Sitio optimizado IE10+, Chrome, Firefox y Safari, Versión ajustada para dispositivos móviles Android.</small>
         </div>
@@ -108,6 +122,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -126,6 +144,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -144,6 +166,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -162,6 +188,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -180,6 +210,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -198,6 +232,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -216,6 +254,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -234,6 +276,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -245,8 +291,13 @@ if($g == 'm'){
 <div id="controles" class="blued">
 	<div id="s1">
     	<div class="iniciar hidden-xs">
-        	<div class="infocarrera hidden-xs">Corre por el corazón de la ciudad y elige tu camino. Cada decisión que tomes sumará un numero diferente de corazones. Corre cuantas veces quieras cada carrera suma. Ahora elonga tu dedo mas deportista e...</div>	
-            <span class="btn btn-primary" onClick="iniciar();">Inicia la Carrera</span>
+        	<div class="infocarrera hidden-xs">Corre por el corazón de la ciudad y elige  caminos para seguir tu trayecto. Cada elección que tomes sumará un numero diferente de corazones.
+            <br>
+            
+            <strong>¡Necesitamos 17 millones de corazones!</strong>
+            </div>	
+            <span class="btn btn-primary" onClick="iniciar();">Inicia tu corrida</span>
+            <div>Corre cuantas veces quieras, cada carrera suma.</div>
             <div class="clear"></div>
             <small>Sitio optimizado IE10+, Chrome, Firefox y Safari, Versión ajustada para dispositivos móviles Android.</small>
         </div>
@@ -335,6 +386,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -353,6 +408,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -371,6 +430,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -389,6 +452,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -407,6 +474,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -443,6 +514,10 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
+<div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                     
                 </div>
             </div>
@@ -462,6 +537,10 @@ if($g == 'm'){
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
                     
+                    <div class="clear miniseparator"></div>
+					<div class="volver">
+                    	<a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -503,7 +582,13 @@ if($g == 'm'){
 
 <div class="sharer pull-right">
 	<h4>La Teletón #LaHacemosTodos</h4>
-	<div class="fb-like" data-href="https://www.facebook.com/CuprumAFP" data-width="180" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	<?php /* <div class="fb-like" data-href="https://www.facebook.com/CuprumAFP" data-width="180" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div> */?>
+    
+    <span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span><span class="hidden-xs"> Compartir</span></span>
+                	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span><span class="hidden-xs"> Twittear</span></a>
+    
 </div>
 
 <?php get_footer('carrera')?>
+<?php }?>
+
