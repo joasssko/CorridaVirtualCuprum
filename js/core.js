@@ -40,9 +40,9 @@ function basicPopup(url) {
 }
 
 jQuery(document).ready(function($) {
-	jQuery(".totop").click(function() {
+	jQuery(".down").click(function() {
 		jQuery('html, body').animate({
-			scrollTop: jQuery("#head").offset().top
+			scrollTop: jQuery(".down").offset().top
 		}, 700 );
 	});
 });

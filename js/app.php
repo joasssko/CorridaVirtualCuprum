@@ -1,10 +1,32 @@
 <script>
 
+<?php $im = get_post_thumbnail_id('4');?>
+<?php $ima = wp_get_attachment_image_src($im , 'full');?>
+
+var picture = '<?php echo $ima[0]?>' ;
+
+function FbookShare(){
+	FB.ui({
+		 method: 'feed',
+		 href: '<?php echo bloginfo('url')?>',
+		 picture : picture,
+		 name : 'CorridaCuprumTeletón.cl, La Teletón #LaHacemosTodos',
+		 description: 'Corre tu tambien, necesitamos 17 millones de corazones #CuprumAFP #Teleton', 
+		 }, function(response){
+			 if (response && !response.error_code) {
+			  jQuery('#fb-root').removeClass('toggled');
+			  window.location.replace("<?php echo get_page_link(24)?>?sm=<?php echo $post->ID?>");
+			} else {
+			  jQuery('#fb-root').removeClass('toggled');
+			}
+		});
+}
+
 jQuery(document).ready(function($) {
 	var f = jQuery( window ).width();
 	var t = jQuery( window ).height();
-	var s = 220;
-	var h = 227;	
+	var s = 600;
+	var h = 300;	
 	var l = (f-s)/2;
 	var m = (t-h)/2;
 	
@@ -12,8 +34,8 @@ jQuery(document).ready(function($) {
 	jQuery(window).resize(function(event) {
 		var f = jQuery( window ).width();
 		var t = jQuery( window ).height();
-		var s = 220;
-		var h = 227;	
+		var s = 600;
+		var h = 300;	
 		var l = (f-s)/2;
 		var m = (t-h)/2;
 	
@@ -49,13 +71,13 @@ video_carrera = {
 	trc4_	: 'ZK5kXZL3g1o',
 	
 	trd1	: 'S7uFHPzzS8s',
-	trd1_	: 'BPqR1s37cRo',
+	trd1_	: 'wpxmr1zABHY',
 	trd2	: 'KxRletxREJo',
-	trd2_	: '3Fn9Tsq5R7E',
+	trd2_	: '3XV_14Kilnw',
 	trd3	: 'YSLKBX9vL0s',
-	trd3_	: 'wpxmr1zABHY',
-	trd4	: 'CXGzUqgZUxw',
-	trd4_	: '3XV_14Kilnw',
+	trd3_	: '3Fn9Tsq5R7E',
+	trd4	: 'BPqR1s37cRo',
+	trd4_	: 'CXGzUqgZUxw',
 	trd5	: 'j3C-hYetTIU',
 	trd5_	: 'JdXkBu5o0gA',
 	trd6	: 'yJIVjTfBHDE',
@@ -177,13 +199,13 @@ function onPlayerStateChange(event) {
   	if(event.data == YT.PlayerState.PLAYING){
 		//setTimeout( time() , 1000 );
 	}
-	
+	//Metas
 	if (event.data == YT.PlayerState.ENDED && vid == 'h1'){
 		console.log('stermine');
 		$('#walker , .ownaporte').addClass('hidden');
 		$('#m1').removeClass('hidden');
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		var suma = aporte+100;
 		aporta(suma);
 		$('#m1 h3').text(suma);
 	}
@@ -192,7 +214,7 @@ function onPlayerStateChange(event) {
 		$('#walker , .ownaporte').addClass('hidden');
 		$('#m2').removeClass('hidden');
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		var suma = aporte+100;
 		aporta(suma);
 		$('#m2 h3').text(suma);
 	}
@@ -201,7 +223,7 @@ function onPlayerStateChange(event) {
 		$('#walker , .ownaporte').addClass('hidden');
 		$('#m3').removeClass('hidden');
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		var suma = aporte+100;
 		aporta(suma);
 		$('#m3 h3').text(suma);
 		
@@ -211,7 +233,7 @@ function onPlayerStateChange(event) {
 		$('#walker , .ownaporte').addClass('hidden');
 		$('#m4').removeClass('hidden');
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		var suma = aporte+100;
 		aporta(suma);
 		$('#m4 h3').text(suma);
 	}
@@ -220,7 +242,7 @@ function onPlayerStateChange(event) {
 		$('#walker , .ownaporte').addClass('hidden');
 		$('#m5').removeClass('hidden');
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		var suma = aporte+100;
 		aporta(suma);
 		$('#m5 h3').text(suma);
 	}
@@ -229,7 +251,7 @@ function onPlayerStateChange(event) {
 		$('#walker , .ownaporte').addClass('hidden');
 		$('#m6').removeClass('hidden');
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		var suma = aporte+100;
 		aporta(suma);
 		$('#m6 h3').text(suma);
 	}
@@ -238,7 +260,7 @@ function onPlayerStateChange(event) {
 		$('#walker , .ownaporte').addClass('hidden');8
 		$('#m7').removeClass('hidden');
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		var suma = aporte+100;
 		aporta(suma);
 		$('#m7 h3').text(suma);
 	}
@@ -247,7 +269,7 @@ function onPlayerStateChange(event) {
 		$('#walker , .ownaporte').addClass('hidden');
 		$('#m8').removeClass('hidden');
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		var suma = aporte+100;
 		aporta(suma);
 		$('#m8 h3').text(suma);
 	}
@@ -300,6 +322,7 @@ function iniciar(){
 	player.playVideo();
 	$('#s1').addClass('hidden');
 	$('#walker').removeClass('hidden');
+	$('#controles').removeClass('blued');
 	timei();
 	
 	
@@ -312,7 +335,7 @@ function iniciar(){
 		console.log(timexx);
 		
 		//ajustar a 9
-		if(timexx == 1 && vid == 'inicio'){
+		if(timexx == 8 && vid == 'inicio'){
 			
 			playerb.cueVideoById(video_carrera.tra1_);
 			player.cueVideoById(video_carrera.tra1);
@@ -328,6 +351,7 @@ function iniciar(){
 				$('#tercera').removeClass('hidden')
 				$('#colors').addClass('per25');
 				$('#stiky').addClass('per25');
+				$('.ownaporte .filler').addClass('per25');
 			}
 			
 			setTimeout(
@@ -337,54 +361,102 @@ function iniciar(){
 			, 1000);
 		}
 		
-		
+		//Levanta pasos
 		<?php if($g == h){?>
+			function timeless(id){
+				
+				timeId = id; 
+				var inttimer = setInterval(tless , 1000);
+				function tless(){
+					act = parseInt($(timeId+' .time span').text() , 10);
+					if(act > 0){
+						less = act - 1;
+					}else{
+						clearInterval(inttimer);
+						//$('#s2 .time span').text('10')
+					}
+					$(timeId+' .time span').text(less);
+				}
+				
+			}
+		
 			if(timexx == 20 && vid == 'paso-1'){
 				$('#s2').removeClass('hidden');
+				timeless('#s2');
 			}
 			
 			if(timexx == 21 && vid == 'c1'){
 				$('#s3').removeClass('hidden');
+				timeless('#s3');
 			}
 			if(timexx == 17 && vid == 'c2'){
 				$('#s4').removeClass('hidden');
+				timeless('#s4');
 			}
 			
 			if(timexx == 20 && vid == 'd1'){
 				$('#s5').removeClass('hidden');
+				timeless('#s5');
 			}
 			if(timexx == 17 && vid == 'd2'){
 				$('#s6').removeClass('hidden');
+				timeless('#s6');
 			}
 			if(timexx == 19 && vid == 'd3'){
 				$('#s7').removeClass('hidden');
+				timeless('#s7');
 			}
 			if(timexx == 23 && vid == 'd4'){
-			$('#s8').removeClass('hidden');
-		}
+				$('#s8').removeClass('hidden');
+				timeless('#s8');
+			}
 		<?php }else{?>
+			function timeless(id){
+				
+				timeId = id; 
+				var inttimer = setInterval(tless , 1000);
+				function tless(){
+					act = parseInt($(timeId+' .time span').text() , 10);
+					if(act > 0){
+						less = act - 1;
+					}else{
+						clearInterval(inttimer);
+						//$('#s2 .time span').text('10')
+					}
+					$(timeId+' .time span').text(less);
+				}
+				
+			}
+		
 			if(timexx == 18 && vid == 'paso-1'){
 				$('#s2').removeClass('hidden');
+				timeless('#s2');
 			}
 			
 			if(timexx == 18 && vid == 'c1'){
 				$('#s3').removeClass('hidden');
+				timeless('#s3');
 			}
 			if(timexx == 23 && vid == 'c2'){
 				$('#s4').removeClass('hidden');
+				timeless('#s4');
 			}
 			
 			if(timexx == 25 && vid == 'd1'){
 				$('#s5').removeClass('hidden');
+				timeless('#s5');
 			}
 			if(timexx == 20 && vid == 'd2'){
 				$('#s6').removeClass('hidden');
+				timeless('#s6');
 			}
 			if(timexx == 19 && vid == 'd3'){
 				$('#s7').removeClass('hidden');
+				timeless('#s7');
 			}
 			if(timexx == 20 && vid == 'd4'){
 			$('#s8').removeClass('hidden');
+			timeless('#s8');
 		}
 		<?php }?>
 		
@@ -404,10 +476,11 @@ function iniciar(){
 				playerb.playVideo();
 				$('#colors').addClass('per50');
 				$('#stiky').addClass('per50');
+				$('.ownaporte .filler').addClass('per50');
 				$('#s2.choose').addClass('hidden');
 				vid = 'c1';
 				var aporte = parseInt($('#aporteactual').text() , 10);
-				var suma = aporte+500;
+				<?php echo $g == 'm' ? 'var suma = aporte+50' :  'var suma = aporte+50'  ; ?>;
 				$('#aporteactual').text(suma);
 			}
 		}
@@ -426,10 +499,11 @@ function iniciar(){
 				playerb.playVideo();
 				$('#colors').addClass('per75');
 				$('#stiky').addClass('per75');
+				$('.ownaporte .filler').addClass('per75');
 				$('#s3.choose').addClass('hidden');
 				vid = 'd1';
 				var aporte = parseInt($('#aporteactual').text() , 10);
-				var suma = aporte+500;
+				<?php echo $g == 'm' ? 'var suma = aporte+120' :  'var suma = aporte+80'  ; ?>;
 				$('#aporteactual').text(suma);
 			}
 		}
@@ -447,10 +521,11 @@ function iniciar(){
 				playerb.playVideo();
 				$('#colors').addClass('per75');
 				$('#stiky').addClass('per75');
+				$('.ownaporte .filler').addClass('per75');
 				$('#s4.choose').addClass('hidden');
 				vid = 'd3';
 				var aporte = parseInt($('#aporteactual').text() , 10);
-				var suma = aporte+500;
+				<?php echo $g == 'm' ? 'var suma = aporte+50' :  'var suma = aporte+90'  ; ?>;
 				$('#aporteactual').text(suma);
 			}
 		}
@@ -470,10 +545,11 @@ function iniciar(){
 				playerb.playVideo();
 				$('#colors').addClass('per99');
 				$('#stiky').addClass('per99');
+				$('.ownaporte .filler').addClass('per99');
 				$('#s5.choose').addClass('hidden');
 				vid = 'h1';
 				var aporte = parseInt($('#aporteactual').text() , 10);
-				var suma = aporte+500;
+				<?php echo $g == 'm' ? 'var suma = aporte+300' :  'var suma = aporte+190'  ; ?>;
 				$('#aporteactual').text(suma);
 			}
 			
@@ -492,10 +568,11 @@ function iniciar(){
 				playerb.playVideo();
 				$('#colors').addClass('per99');
 				$('#stiky').addClass('per99');
+				$('.ownaporte .filler').addClass('per99');
 				$('#s6.choose').addClass('hidden');
 				vid = 'h3';
 				var aporte = parseInt($('#aporteactual').text() , 10);
-				var suma = aporte+500;
+				<?php echo $g == 'm' ? 'var suma = aporte+150' :  'var suma = aporte+320'  ; ?>;
 				$('#aporteactual').text(suma);
 			}
 			
@@ -514,10 +591,11 @@ function iniciar(){
 				playerb.playVideo();
 				$('#colors').addClass('per99');
 				$('#stiky').addClass('per99');
+				$('.ownaporte .filler').addClass('per99');
 				$('#s7.choose').addClass('hidden');
 				vid = 'h5';
 				var aporte = parseInt($('#aporteactual').text() , 10);
-				var suma = aporte+500;
+				<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
 				$('#aporteactual').text(suma);
 			}
 			
@@ -536,19 +614,15 @@ function iniciar(){
 				playerb.playVideo();
 				$('#colors').addClass('per99');
 				$('#stiky').addClass('per99');
+				$('.ownaporte .filler').addClass('per99');
 				$('#s8.choose').addClass('hidden');
 				vid = 'h7';
 				var aporte = parseInt($('#aporteactual').text() , 10);
-				var suma = aporte+500;
+				<?php echo $g == 'm' ? 'var suma = aporte+1220' :  'var suma = aporte+70'  ; ?>;
 				$('#aporteactual').text(suma);
 			}
-			
 		}
-		
-		
-		
 	}
-  
 }
 
 function cambiaterceracam(){
@@ -558,8 +632,6 @@ function cambiaterceracam(){
 	$('#player').addClass('hidden');
 	$('#playertercera').removeClass('hidden');
 }
-
-
 function cambiaprimeracam(){
 	$('#primera').addClass('hidden');
 	$('#tercera').removeClass('hidden');
@@ -586,9 +658,10 @@ function hb1(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per50');
 		$('#stiky').addClass('per50');
+		$('.ownaporte .filler').addClass('per50');
 		vid = 'c1';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+50' :  'var suma = aporte+50'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -610,9 +683,10 @@ function hb2(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per50');
 		$('#stiky').addClass('per50');
+		$('.ownaporte .filler').addClass('per50');
 		vid = 'c2';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+80' :  'var suma = aporte+100'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 	
@@ -635,9 +709,10 @@ function hc1(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per75');
 		$('#stiky').addClass('per75');
+		$('.ownaporte .filler').addClass('per75');
 		vid = 'd1';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+120' :  'var suma = aporte+80'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 	
@@ -659,9 +734,10 @@ function hc2(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per75');
 		$('#stiky').addClass('per75');
+		$('.ownaporte .filler').addClass('per75');
 		vid = 'd2';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+50' :  'var suma = aporte+30'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -682,9 +758,10 @@ function hc3(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per75');
 		$('#stiky').addClass('per75');
+		$('.ownaporte .filler').addClass('per75');
 		vid = 'd3';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+50' :  'var suma = aporte+90'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -705,9 +782,10 @@ function hc4(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per75');
 		$('#stiky').addClass('per75');
+		$('.ownaporte .filler').addClass('per75');
 		vid = 'd4';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+100' :  'var suma = aporte+50'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -729,9 +807,10 @@ function hd1(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per99');
 		$('#stiky').addClass('per99');
+		$('.ownaporte .filler').addClass('per99');
 		vid = 'h1';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+300' :  'var suma = aporte+190'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -752,9 +831,10 @@ function hd2(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per99');
 		$('#stiky').addClass('per99');
+		$('.ownaporte .filler').addClass('per99');
 		vid = 'h2';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+100' :  'var suma = aporte+20'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -775,9 +855,10 @@ function hd3(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per99');
 		$('#stiky').addClass('per99');
+		$('.ownaporte .filler').addClass('per99');
 		vid = 'h3';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+150' :  'var suma = aporte+320'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -798,9 +879,10 @@ function hd4(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per99');
 		$('#stiky').addClass('per99');
+		$('.ownaporte .filler').addClass('per99');
 		vid = 'h4';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+500' :  'var suma = aporte+170'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -821,9 +903,10 @@ function hd5(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per99');
 		$('#stiky').addClass('per99');
+		$('.ownaporte .filler').addClass('per99');
 		vid = 'h5';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -844,9 +927,10 @@ function hd6(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per99');
 		$('#stiky').addClass('per99');
+		$('.ownaporte .filler').addClass('per99');
 		vid = 'h6';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+270' :  'var suma = aporte+1210'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -867,9 +951,10 @@ function hd7(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per99');
 		$('#stiky').addClass('per99');
+		$('.ownaporte .filler').addClass('per99');
 		vid = 'h7';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+1220' :  'var suma = aporte+70'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }
@@ -890,9 +975,10 @@ function hd8(lugar){
 		playerb.playVideo();
 		$('#colors').addClass('per99');
 		$('#stiky').addClass('per99');
+		$('.ownaporte .filler').addClass('per99');
 		vid = 'h8';
 		var aporte = parseInt($('#aporteactual').text() , 10);
-		var suma = aporte+500;
+		<?php echo $g == 'm' ? 'var suma = aporte+800' :  'var suma = aporte+350'  ; ?>;
 		$('#aporteactual').text(suma);
 	}
 }

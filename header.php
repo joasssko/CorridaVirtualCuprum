@@ -29,6 +29,10 @@
 <script>
 jQuery(window).load(function() {
 	jQuery("#loader-wrapper").fadeOut("slow");
+	setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	}, 0);
 });
 
 var he = $( window ).height();
@@ -55,6 +59,30 @@ jQuery( document ).ready(function() {
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+   
+   
+<?php $im = get_post_thumbnail_id('4');?>
+<?php $ima = wp_get_attachment_image_src($im , 'full');?>
+
+var picture = '<?php echo $ima[0]?>' ;
+
+function FbookShare(){
+	FB.ui({
+		 method: 'feed',
+		 href: '<?php echo bloginfo('url')?>',
+		 picture : picture,
+		 name : 'CorridaCuprumTeletón.cl, La Teletón #LaHacemosTodos',
+		 description: 'Corre tu también, necesitamos 17 millones de corazones #CuprumAFP #Teleton', 
+		 }, function(response){
+			 if (response && !response.error_code) {
+			  jQuery('#fb-root').removeClass('toggled');
+			  window.location.replace("<?php echo get_page_link(24)?>?sm=<?php echo $post->ID?>");
+			} else {
+			  jQuery('#fb-root').removeClass('toggled');
+			}
+		});
+}
+   
 </script>
 
 </head>
@@ -68,17 +96,41 @@ jQuery( document ).ready(function() {
     <div id="loader"></div>
 </div>
 
+<div id="aviso" class="hidden-lg hidden-md">
+	<?php /* <img src="<?php echo get_bloginfo('template_directory')?>/images/logo.png" alt=""> */?>
+    <div id="inside"><span class="fa fa-refresh"></span>Para una mejor experiencia, gire su dispositivo a la posición horizontal.</div>
+    
+</div>
+
 
 <header class="navbar-fixed-top">
 	<a href="<?php echo get_bloginfo('url')?>">
-    	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo-cuprum.png" alt="">
+    	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo-cuprum.png" alt="" class="lc">
     </a>
         
     <img src="<?php echo get_bloginfo('template_directory')?>/images/logo-corrida_st.png" class="lcc" alt="">
     <div class="navbar-right">
-    	<?php wp_nav_menu(array('theme_location'  => 'primary', 'menu_class' => 'nav navbar-nav pull-left' , 'container' => 'none')) ?>
+    	<?php wp_nav_menu(array('theme_location'  => 'primary', 'menu_class' => 'nav navbar-nav pull-left hidden-xs hidden-sm' , 'container' => 'none')) ?>
+        
+        <!-- Single button -->
+        <div class="btn-group pull-right hidden-md hidden-lg mmobile">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="fa fa-bars fa-fw"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">¿Cómo ayudar?</a></li>
+            <li><a href="#">Galería 2014</a></li>
+            <li><a href="#">Inscríbete</a></li>
+          </ul>
+        </div>
+        
+        
         <div class="sharer pull-right">
-        	<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="180" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        	<?php /* <div class="fb-like" data-href="https://www.facebook.com/CuprumAFP" data-width="180" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div> */?>
+            
+            <span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span><span class="hidden-xs"> Compartir</span></span>
+                	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span><span class="hidden-xs"> Twittear</span></a>
         </div>
     </div>
     

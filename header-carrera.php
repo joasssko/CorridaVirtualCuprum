@@ -65,10 +65,15 @@ jQuery( document ).ready(function() {
 <div id="fb-root"></div>
 
 <div id="loader-wrapper">
-	<img src="<?php echo get_bloginfo('template_directory')?>/images/logo-loader.png" alt="">
+	<img src="<?php echo get_bloginfo('template_directory')?>/images/loader-corrida.gif" alt="">
     <?php /* <div id="loader"></div> */?>
 </div>
 
+<div id="aviso" class="hidden-lg hidden-md">
+	<?php /* <img src="<?php echo get_bloginfo('template_directory')?>/images/logo.png" alt=""> */?>
+    <div id="inside"><span class="fa fa-refresh"></span>Para una mejor experiencia, gire su dispositivo a la posición horizontal.</div>
+    
+</div>
 
 <header class="navbar-fixed-top">
 	<a href="<?php echo get_bloginfo('url')?>">
@@ -82,8 +87,8 @@ jQuery( document ).ready(function() {
         <div class="ownaporte">
         	<div class="filler hidden-xs"></div>
         	<div class="heart">
-            	<img src="<?php echo get_bloginfo('template_directory')?>/images/corazon.png" class="hidden-xs" alt="">
-                <span id="aporteactual"><div class="fa fa-heart fa-fw"></div> 0</span>
+            	<img src="<?php echo get_bloginfo('template_directory')?>/images/corazon.gif" class="hidden-xs" alt="">
+                <span id="aporteactual"><div class="fa fa-heart fa-fw hidden-lg hidden-md hidden-sm"></div> 0</span>
                 <b>Tu Aporte</b>
             </div>
         </div>
