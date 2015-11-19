@@ -99,7 +99,7 @@ if($g == 'm'){
         	<h1 onClick="hd5($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Calle en construcción</h1>
     	</div>
         <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
-        	<h1 onClick="hd6($(this).text())">Tribunales de justicia <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
+        	<h1 onClick="hd6($(this).text())">Tribunales de Justicia <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
     	</div>
     </div>
     <div id="s8" class="choose hidden">
@@ -371,7 +371,7 @@ if($g == 'm'){
 	        <h1 onClick="hd7($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Parque Bicentenario</h1>
         </div>
         <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
-    		<h1 onClick="hd8($(this).text())">Parque Alberto Hurtado <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
+    		<h1 onClick="hd8($(this).text())">Parque A. Hurtado <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     

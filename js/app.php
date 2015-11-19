@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 	var f = jQuery( window ).width();
 	var t = jQuery( window ).height();
 	var s = 600;
-	var h = 300;	
+	var h = 250;	
 	var l = (f-s)/2;
 	var m = (t-h)/2;
 	
@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 		var f = jQuery( window ).width();
 		var t = jQuery( window ).height();
 		var s = 600;
-		var h = 300;	
+		var h = 250;	
 		var l = (f-s)/2;
 		var m = (t-h)/2;
 	

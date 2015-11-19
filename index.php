@@ -66,10 +66,12 @@ $preunido = ($llevamos * 100)/$total;
             	<figure>
                 	
                 	<figcaption>
-                    	<h3>¿Cómo Ayudar?</h3>
+                    	<h3><a href="http://www.corridacuprumteleton.cl/como_apoyar.html">¿Cómo Ayudar?</a></h3>
                 		<p>Puedes participar en la #CorridaCuprum junto a 10.000 corredores o en la #CorridaVirtual desde cualquier lugar.</p>
                 	</figcaption>
-                    <img src="<?php echo get_bloginfo('template_directory')?>/images/box-1.jpg" class="img-responsive" alt="">
+                    <a href="http://www.corridacuprumteleton.cl/como_apoyar.html">
+                        <img src="<?php echo get_bloginfo('template_directory')?>/images/box-1.jpg" class="img-responsive" alt="">
+                    </a>
                 </figure>
             </div>
             
@@ -77,21 +79,26 @@ $preunido = ($llevamos * 100)/$total;
             	<figure>
                 	
                 	<figcaption>
-                    	<h3>Galería de fotos</h3>
+                    	<h3><a href="http://www.corridacuprumteleton.cl/galeria.html">Galería de fotos</a></h3>
                 		<p>Revisa aquí imágenes y momentos de las anteriores Corridas Cuprum por la Teletón.</p>
                 	</figcaption>
-                    <img src="<?php echo get_bloginfo('template_directory')?>/images/box-2.jpg" class="img-responsive" alt="">
+                    <a href="http://www.corridacuprumteleton.cl/galeria.html">
+                        <img src="<?php echo get_bloginfo('template_directory')?>/images/box-2.jpg" class="img-responsive" alt="">
+                    </a>
                 </figure>
             </div>
             
             <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
             	<figure>
-                	
                 	<figcaption>
-                    	<h3>Comparte tus fotos</h3>
+                    	<h3><a href="http://www.corridacuprumteleton.cl/galeria_facebook.html
+">Comparte tus fotos</a></h3>
                 		<p>Aquí podrás solicitar que todas las fotos de la producción en que aparezcas, se publiquen en tu Facebook.</p>
                 	</figcaption>
-                    <img src="<?php echo get_bloginfo('template_directory')?>/images/box-3.jpg" class="img-responsive" alt="">
+                    <a href="http://www.corridacuprumteleton.cl/galeria_facebook.html
+"> 
+                        <img src="<?php echo get_bloginfo('template_directory')?>/images/box-3.jpg" class="img-responsive" alt="">
+                    </a>
                 </figure>
             </div>
             
@@ -99,10 +106,12 @@ $preunido = ($llevamos * 100)/$total;
             	<figure>
                 	
                 	<figcaption>
-                    	<h3>Inscríbete</h3>
+                    	<h3><a href="http://www.corridacuprumteleton.cl/inscripcion.html">Inscríbete</a></h3>
                 		<p>Participa junto a tu familia y amigos en los 5 o 10 K. ¡Te esperamos a ti y a 10.000 corredores más!</p>
                 	</figcaption>
-                    <img src="<?php echo get_bloginfo('template_directory')?>/images/box-4.jpg" class="img-responsive" alt="">
+                    <a href="http://www.corridacuprumteleton.cl/inscripcion.html">
+                        <img src="<?php echo get_bloginfo('template_directory')?>/images/box-4.jpg" class="img-responsive" alt="">
+                    </a>
                 </figure>
             </div>
         	<div class="clear"></div>

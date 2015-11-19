@@ -118,10 +118,10 @@ function FbookShare(){
             <span class="fa fa-bars fa-fw"></span>
           </button>
           <ul class="dropdown-menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">¿Cómo ayudar?</a></li>
-            <li><a href="#">Galería 2014</a></li>
-            <li><a href="#">Inscríbete</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="http://www.corridacuprumteleton.cl/como_apoyar.html">¿Cómo ayudar?</a></li>
+            <li><a href="http://www.corridacuprumteleton.cl/galeria.html" re>Galería 2014</a></li>
+            <li><a href="http://www.corridacuprumteleton.cl/inscripcion.html" rel="nofollow">Inscríbete</a></li>
           </ul>
         </div>
         

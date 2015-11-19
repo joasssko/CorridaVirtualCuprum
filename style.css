@@ -287,97 +287,23 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 .navbar-default { margin: 0!important }
 
 #menu-navegacion { margin: 30px 0 0 }
-#menu-navegacion li a {
-    font-family: akzidenz, helvetica, arial ,sans-serif;
-    font-size: 26px;
-    font-weight: 300;
-    color: #fff;
-    cursor: pointer;
-    transition: all .3s ease-in;
-    border-bottom: none;
-    display: inline-block;
-    text-transform: none;
-    padding: 10px 25px;
-}
+#menu-navegacion li a {font-family: akzidenz, helvetica, arial ,sans-serif; font-size: 26px; font-weight: 300; color: #fff; cursor: pointer; transition: all .3s ease-in; border-bottom: none; display: inline-block; text-transform: none; padding: 10px 25px; }
 
-.lcc{position: absolute;
-    top: 0;
-    margin: 0 auto;
-    right: 0;
-    left: 0;}
+#menu-navegacion li a:hover {color: #e2e2e2; }
+
+.lcc{position: absolute; top: 0; margin: 0 auto; right: 0; left: 0;}
 
 
 .ownaporte{ width:82px;; position:relative}
-.ownaporte .filler {
-    width: 1px;
-    z-index: 0;
-    position: absolute;
-    background-color: #f30;
-    top: 0;
-    left: 20px;
-    bottom: 0;
-    right: 20px;
-	/*margin:0 20px;*/
-}
-.ownaporte .heart {
-    position: relative;
-    z-index: 1;
-    top: 0;
-}
+.ownaporte .filler {width: 1px; z-index: 0; position: absolute; background-color: #f30; top: 0; left: 20px; bottom: 0; right: 20px; /*margin:0 20px;*/ }
+.ownaporte .heart {position: relative; z-index: 1; top: 0; }
 .ownaporte #aporteactual{ font-family:akzidenz, helvetica, arial, sans-serif; font-weight:300; font-size:25px; color:#fff; text-align:center; display:block; background-color:#00336a}
-.ownaporte b {
-    color: #fff;
-    text-align: center;
-    display: block;
-    font-size: 18px;
-    background-color: #e63039;
-    font-weight: 300;
-    font-family: akzidenz, helvetica, arial, sans-serif;
-    padding: 5px 0;
-}
+.ownaporte b {color: #fff; text-align: center; display: block; font-size: 18px; background-color: #e63039; font-weight: 300; font-family: akzidenz, helvetica, arial, sans-serif; padding: 5px 0; }
 
+.time{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; /*background-color: #f30;*/ }
+.time span {top: 0; bottom: 0; margin: auto auto; display: block; position: absolute; left: 0; right: 0; width: 100px; height: 110px; font-size: 60px; text-align: center; font-family: akzidenz, helvetica, arial, sans-serif; background-image: url(images/timeframe.png); background-position: center top; background-repeat: no-repeat; line-height: 210%; color: #fff; }
 
-.time{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    /*background-color: #f30;*/
-}
-
-.time span {
-    top: 0;
-    bottom: 0;
-    margin: auto auto;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100px;
-    height: 110px;
-    font-size: 60px;
-    text-align: center;
-    font-family: akzidenz, helvetica, arial, sans-serif;
-    background-image: url(images/timeframe.png);
-    background-position: center top;
-    background-repeat: no-repeat;
-    line-height: 210%;
-    color: #fff;
-}
-
-#walker {
-    position: absolute;
-    bottom: 80px;
-    
-    width: 325px;
-    display: block;
-    /*height: 45px;*/
-	z-index:1;
-	margin-left:30px;
-}
-
+#walker {position: absolute; bottom: 80px; width: 325px; display: block; /*height: 45px;*/ z-index:1; margin-left:30px; }
 #walker #tramoactual{ font-family:akzidenz, helvetica, arial, sans-serif; font-size:40px; font-weight:300; color:#fff;}
 #walker #monkeyman{ position:relative;}
 #walker #monkeyman #base { background-image:url(images/base-walker.png); background-repeat: no-repeat; background-position:top  left; height: 45px; position:absolute; top:0; left:0; bottom:0; right:0  }
@@ -396,13 +322,7 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 .ownaporte .filler.per75{ width:75%}
 .ownaporte .filler.per99{ width:99%}
 
-#walker #monkeyman #stiky{
-    position: relative;
-    z-index: 1;
-    left: -1%;
-    top: 10px;
-	transition:all 23s ease-in
-}
+#walker #monkeyman #stiky{position: relative; z-index: 1; left: -1%; top: 10px; transition:all 23s ease-in }
 
 #walker #monkeyman #stiky.per25{ left:22%}
 #walker #monkeyman #stiky.per50{ left:47%}
@@ -418,164 +338,36 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 
 #head{ /*background-image:url(images/bgtop.jpg); background-repeat:no-repeat; background-position: top center; background-size: 100% 100%; */ }
 
-#head .personajes {
-    position: absolute;
-    bottom: 0;
-}
+#head .personajes {position: absolute; bottom: 0; }
 
-#head .runners .personajes {
-top: 0;
-}
-#head .selectors .personajes {
-z-index: 2;
-}
+#head .runners .personajes {top: 0; }
+#head .selectors .personajes {z-index: 2; }
 #head .runners .personajes.pull-left{ background-image:url(images/run-left.jpg); background-repeat: no-repeat; background-position: bottom center; background-size: 100% auto;}
-
-#head .runners .personajes.pull-right{  background-image:url(images/run-right.jpg); background-repeat: no-repeat; background-position: bottom center; background-size: 100% auto;}
-
-#head .runners .personajes.pull-left:after{     background-image: url(images/lines-left.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute; }
-
-#head .runners .personajes.pull-right:after{      background-image: url(images/lines-right.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;}
-
-
+#head .runners .personajes.pull-right{background-image:url(images/run-right.jpg); background-repeat: no-repeat; background-position: bottom center; background-size: 100% auto;}
+#head .runners .personajes.pull-left:after{background-image: url(images/lines-left.png); background-repeat: no-repeat; background-position: bottom left; content: ''; top: 0; bottom: 0; left: 0; right: 0; position: absolute; }
+#head .runners .personajes.pull-right:after{background-image: url(images/lines-right.png); background-repeat: no-repeat; background-position: bottom right; content: ''; top: 0; bottom: 0; left: 0; right: 0; position: absolute;}
 #head .personajes.pull-right{ right:0; }
-
-#head .personajes img {
-    max-width: 530px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-	z-index:1
-}
+#head .personajes img {max-width: 530px; position: absolute; bottom: 0; left: 0; right: 0; z-index:1 }
 
 .selectors{ text-align: center}
-
-.selectors a {
-    margin-bottom: 100px;
-    background-color: #ffa409;
-    text-transform: uppercase;
-    font-family: akzidenz, helvetica, arial, sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    border: none;
-    padding: 10px 20px;
-    line-height: 100%; transition: all .3s ease-in
-}
-
+.selectors a {margin-bottom: 100px; background-color: #ffa409; text-transform: uppercase; font-family: akzidenz, helvetica, arial, sans-serif; font-weight: 300; font-size: 25px; border: none; padding: 10px 20px; line-height: 100%; transition: all .3s ease-in }
 .selectors a strong{ display:block}
+.selectors a:hover{background-color:#1a3668 }
 
-.selectors a:hover{
-	background-color:#1a3668
-}
+#triangle {background-image: url(images/triangle.png); background-position: bottom center; background-repeat: no-repeat; margin-bottom: -312px; position: relative; z-index: 1; padding-bottom: 80px; text-align: center; }
+#triangle h2 {font-size: 38px; font-weight: 300; color: #1a3668; font-family: akzidenz, helvetica, arial , sans-serif; margin: 7px 0 10px; }
+#triangle p {text-align: center; line-height: 100%; padding: 0px; margin: 0px; font-family: akzidenz,helvetica, arial, sans-serif; font-size: 27px; color: #122548; }
+#triangle p span {font-family: sgb, helvetica, arial, sans-serif; color: #ffa409; font-size: 50px; line-height: 100%; margin: 10px 0; display: inline-block; }
+#triangle p.esp {font-family: sgb, helvetica, arial, sans-serif; color: #122548; font-size: 24px; text-transform: uppercase; line-height: 100%; }
+#triangle #hearts .base {background-color: #e13131; height: 56px; margin-bottom: -56px; }
+#triangle #hearts .mask {background-image: url(images/heartmask.png); background-repeat: repeat-x; height: 56px; background-position: top left; position: relative; }
 
-#triangle {
-    background-image: url(images/triangle.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    margin-bottom: -312px;
-    position: relative;
-    z-index: 1;
-    padding-bottom: 80px; text-align: center;
-}
+.infolcc{display: block; text-align: center; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.02) 30%, rgba(0,0,0,0) 31%, rgba(0,0,0,0) 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.7)), color-stop(30%,rgba(0,0,0,0.02)), color-stop(31%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.02) 30%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.02) 30%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.02) 30%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); background: radial-gradient(ellipse at center,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.02) 30%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=1 ); z-index:1 }
+.infolcc img{padding: 20% 0 0 0; }
 
-#triangle h2 {
-    font-size: 38px;
-    font-weight: 300;
-    color: #1a3668;
-    font-family: akzidenz, helvetica, arial , sans-serif;
-    margin: 7px 0 10px;
-}
-#triangle p {
-    text-align: center;
-    line-height: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: akzidenz,helvetica, arial, sans-serif;
-    font-size: 27px;
-	color: #122548;
-}
-#triangle p span {
-    font-family: sgb, helvetica, arial, sans-serif;
-    color: #ffa409;
-    font-size: 50px;
-    line-height: 100%;
-    margin: 10px 0;
-    display: inline-block;
-}
-#triangle p.esp {
-    font-family: sgb, helvetica, arial, sans-serif;
-    color: #122548;
-    font-size: 24px;
-    text-transform: uppercase;
-    line-height: 100%;
-}
+.tchare .btn {font-family: akzidenz, helvetica, arial, sans-serif; font-size: 26px; font-weight: 300; color: #fff; border: none; margin: 0 10px; text-transform: uppercase; line-height: 100%; }
 
-#triangle #hearts .base {
-    background-color: #e13131;
-    height: 56px;
-    margin-bottom: -56px;
-}
-#triangle #hearts .mask {
-    background-image: url(images/heartmask.png);
-    background-repeat: repeat-x;
-    height: 56px;
-    background-position: top left;
-    position: relative;
-}
-
-.infolcc{    display: block;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.02) 30%, rgba(0,0,0,0) 31%, rgba(0,0,0,0) 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.7)), color-stop(30%,rgba(0,0,0,0.02)), color-stop(31%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.02) 30%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.02) 30%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.02) 30%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); background: radial-gradient(ellipse at center,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.02) 30%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=1 ); z-index:1 
-
-}
-
-.infolcc img{
-padding: 20% 0 0 0;
-}
-
-.tchare .btn {
-    font-family: akzidenz, helvetica, arial, sans-serif;
-    font-size: 26px;
-    font-weight: 300;
-    color: #fff;
-    border: none;
-    margin: 0 10px;
-    text-transform: uppercase;
-    line-height: 100%;
-}
-
-.sharer .btn {
-    font-family: akzidenz, helvetica, arial, sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: #fff;
-    border: none;
-    margin: 0;
-    text-transform: uppercase;
-    line-height: 100%;
-}
+.sharer .btn {font-family: akzidenz, helvetica, arial, sans-serif; font-size: 18px; font-weight: 300; color: #fff; border: none; margin: 0; text-transform: uppercase; line-height: 100%; }
 
 .down{ cursor:pointer}
 
@@ -586,14 +378,7 @@ padding: 20% 0 0 0;
 a.returned{}
 a.returned:hover{}
 
-main {
-    background-image: url(images/main.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-color: #1a3668;
-    background-size: 100% auto;
-    padding-top: 400px;
-}
+main {background-image: url(images/main.png); background-repeat: no-repeat; background-color: #1a3668; background-size: 140% auto; background-position: top 3%; padding-top: 400px; }
 
 .force{ padding:150px 0}
 .force p{ font-size:80px; color:#fff; font-family:akzidenz , helvetica, arial, sans-serif; text-align:center}
@@ -602,120 +387,38 @@ main {
 .force strong{ font-family:sgb, helvetica, arial, sans-serif; text-transform:uppercase;}
 
 main figure figcaption{ position:relative;  background-color:#122548; padding:15px 15px 5px 15px; }
-main figure figcaption:after {
-    content: '';
-    width: 100%;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 150px 0 150px;
-    border-color: #122548 transparent transparent transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -30px;
-}
-
-
-main figure:hover {
-    margin-top: -5px;
-}
-main figure {
-    transition: all .3s ease;
-}
-
+main figure figcaption:after {content: ''; width: 100%; height: 0; border-style: solid; border-width: 30px 150px 0 150px; border-color: #122548 transparent transparent transparent; position: absolute; left: 0; right: 0; bottom: -30px; }
+main figure:hover {margin-top: -5px; }
+main figure {transition: all .3s ease; }
 main figure img{ width: 100%; height:auto}
-main figure figcaption h3{color:#ffa409; font-family:akzidenz, helvetica, arial, sans-serif; font-size:34px; font-weight:400; margin:0; padding: 0 0 15px 0}
+main figure figcaption h3 a{color:#ffa409; font-family:akzidenz, helvetica, arial, sans-serif; font-size:34px; font-weight:400; margin:0; padding: 0 0 15px 0; transition:all .3s ease-in;}
+main figure figcaption h3 a:hover{color:#D68A08; text-decoration:none;}
 main figure figcaption p{ color:#fff; font-family:open sans, helvetica, arial, sans-serif; font-size:14px; line-height:140%; font-weight:300}
 
-
-#controles{
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
+#controles{position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; right: 0; }
 #controles.blued{ background-color:#1a3668;}
 
-#s1{    position: absolute;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center; cursor:pointer}
+#s1{position: absolute; margin: 0 auto; display: inline-block; text-align: center; cursor:pointer} 
 #s1{ width:600px; height:300px;}
-
-#s1 .infocarrera{
-    color: #fff;
-    font-size: 16px;
-    line-height: 150%;
-    margin-bottom: 20px;
-}
-
+#s1 .infocarrera{color: #fff; font-size: 16px; line-height: 150%; margin-bottom: 20px; }
 #s1  small{ color:#fff; line-height:100%; margin-top:30px; display:inline-block }
-
-#s1 .btn {
-    font-size: 20px;
-    text-transform: uppercase;
-    border-radius: 0;
-    font-weight: 900;
-    background-color: #ffa409;
-    padding: 20px;
-}
+#s1 .btn {font-size: 20px; text-transform: uppercase; border-radius: 0; font-weight: 900; background-color: #ffa409; padding: 20px; }
 
 .choose{background-color:rgba(26, 54, 104 , .8); position:fixed; top: 0; bottom:0 ; left:0 ; right: 0}
 .meta{background-color:rgba(26, 54, 104 , .9); position:fixed; top: 0; bottom:0 ; left:0 ; right: 0}
 	
 .insmeta h1 {font-family: akzidenz, helvetica, arial, sans-serif; font-weight: 300; font-size: 55px; text-transform: none; margin-top: 0; margin-bottom: 0; }
 	
-.meta h2{background-color: #e63039;
-    display: inline-block;
-    clear: both;
-    float: none;
-    padding: 10px 20px;
-    font-family: akzidenz , helvetica, arial, sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px; text-transform:none;
-}	
+.meta h2{background-color: #e63039; display: inline-block; clear: both; float: none; padding: 10px 20px; font-family: akzidenz , helvetica, arial, sans-serif; font-weight: 300; letter-spacing: 1px; text-transform:none; }
 	
 .meta h3 {font-size: 70px; font-family: akzidenz, helvetica, arial, sans-serif; font-weight: 300; margin-top: 5px; }
 
-.choose h1 {
-	font-family: akzidenz, helvetica, arial, sans-serif;
-	font-weight:300;
-    display: inline-block;
-    margin: 50% auto;
-    color: #fff;
-    background-color: #1a3668;
-    padding:0 20px 0 0;
-	width:380px;
-	text-align:right;
-	line-height: 210%;
-	transition:all .3s ease-in;
-	cursor:pointer
-}
+.choose h1 {font-family: akzidenz, helvetica, arial, sans-serif; font-weight:300; display: inline-block; margin: 50% auto; color: #fff; background-color: #1a3668; padding:0 20px 0 0; width:380px; text-align:right; line-height: 210%; transition:all .3s ease-in; cursor:pointer }
 
-.choose h1:hover {
-    background-color: #ffa409;
-}
-
-.choose h1:hover span {
-
-}
-
-.choose .pull-right h1 {
-    padding:0 0 0 20px;
-	text-align:left; cursor:pointer
-}
-
-.choose h1 span {
-    background-color: #ea393a;
-    padding: 20px 20px;
-    text-align: center;
-    width: 70px;
-	animation: pulse infinite .5s ease-in
-}
-
+.choose h1:hover {background-color: #ffa409; }
+.choose h1:hover span {}
+.choose .pull-right h1 {padding:0 0 0 20px; text-align:left; cursor:pointer }
+.choose h1 span {background-color: #ea393a; padding: 20px 20px; text-align: center; width: 70px; animation: pulse infinite .5s ease-in }
 
 @-webkit-keyframes pulse { 
 	0% { background-color:#ea393a }
@@ -726,19 +429,10 @@ main figure figcaption p{ color:#fff; font-family:open sans, helvetica, arial, s
     100% { background-color:#be2627 }
 }
 
-div#s4 .pull-right h1 {
-    font-size: 34px;
-}
+div#s4 .pull-right h1 {font-size: 34px; }
 
-.seleccion.pull-right {
-    right: 0;
-}
-.seleccion {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    text-align: center;
-}
+.seleccion.pull-right {right: 0; }
+.seleccion {position: absolute; top: 0; bottom: 0; text-align: center; }
 
 .meta .insmeta{ margin:13% 0}
 .meta .result{ text-align:center; color:#fff;} 
@@ -771,16 +465,9 @@ footer ul { margin: 0 }
 footer li { /*display: inline-block;*/ list-style: none;  }
 
 footer li a { display: inline-block; list-style: none; color: #fff;  padding: 0 5px; text-decoration: none!important; text-transform: uppercase; transition: all .3s ease-in; font-family:akzidenz, helvetica, arial, sans-serif; font-size:20px; }
-footer li a span {
-    padding: 5px;
-    background-color: #fff;
-    color: #ffa409;
-    border-radius: 100px;
-    width: 35px;
-    text-align: center;
-}
+footer li a span {padding: 7px 10px; background-color: #fff; color: #ffa409; border-radius: 100px; width: 35px; text-align: center; margin-bottom: 10px; }
 footer li a:hover { color: #009cdc }
-footer li a:hover { color: #f2f2f2 }
+footer li a:hover { color: #E2E2E2; }
 
 footer img{ margin-right:15px}
 
@@ -790,15 +477,8 @@ footer img{ margin-right:15px}
 
 
 .page-id-4 footer{ background-color:#102446; padding:5px 0}
-.page-id-4 .sharer {
-    z-index: 1;
-    position: absolute;
-    bottom: 50px;
-    right: 0; text-align:right
-}
-
+.page-id-4 .sharer {z-index: 1; position: absolute; bottom: 50px; right: 0; text-align:right }
 .page-id-4 .sharer h4{ font-family:akzidenz, helvetica, arial , sans-serif; color:#fff; font-size:30px; font-weight:300}
-
 .page-id-4 footer small{ padding:15px;}
 
 .ajax-loader { display: none!important }
@@ -809,31 +489,12 @@ footer img{ margin-right:15px}
 
 
 .mmobile{ margin: 10px 10px 0 0;}
-.mmobile button{    background: rgba(255,255,255,.9);
-    border: 1px solid #ffa409;
-    border-radius: 0;
-    padding: 10px;
-    color: #ffa409;}
+.mmobile button{background: rgba(255,255,255,.9); border: 1px solid #ffa409; border-radius: 0; padding: 10px; color: #ffa409;}
 
-.bajar span {
-    border-radius: 100px;
-    border: 1px solid #ffa409;
-    background-color: #ffa409;
-    padding: 10px 0 2px 0px;
-    color: #fff;
-}
-.bajar {
-    font-size: 50px;
-    margin-top: 60px; transition:all .3s ease-in;
-}
-
-.bajar:hover {
-    margin-top: 55px;
-}
-
-.bajar:hover span{
-	background-color:rgba(255, 164, 9 , .8);
-}
+.bajar span {border-radius: 100px; border: 1px solid #ffa409; background-color: #ffa409; padding: 10px 0 2px 0px; color: #fff; }
+.bajar {font-size: 50px; margin-top: 60px; transition:all .3s ease-in; }
+.bajar:hover {margin-top: 55px; }
+.bajar:hover span{background-color:rgba(255, 164, 9 , .8); }
 
 @media (max-width: 1500px){
 	header .sharer{    clear: both;
@@ -843,15 +504,16 @@ footer img{ margin-right:15px}
   #head .personajes img {max-width: none; }
 }
 
-@media (max-width: 1199px) and (min-width: 992px) { .container { width: 100% }
-    .navbar-right li a { margin: 10px 0 }
-    .modal-lg { width: 90%; margin-top: 100px }
-    .carrusel .controls #sgte { right: 15px }
-    .carrusel .controls #ante { left: 15px }
-    .carrusel .controls #anteb { left: 15px; bottom: 160px }
-    .carrusel .controls #sgteb { right: 15px; bottom: 160px }
+@media (max-width: 1199px) and (min-width: 992px) { 
+  .container { width: 100% }
+  .navbar-right li a { margin: 10px 0 }
+  .modal-lg { width: 90%; margin-top: 100px }
+  .carrusel .controls #sgte { right: 15px }
+  .carrusel .controls #ante { left: 15px }
+  .carrusel .controls #anteb { left: 15px; bottom: 160px }
+  .carrusel .controls #sgteb { right: 15px; bottom: 160px }
 
-#head .personajes img { max-width: 90%;}
+  #head .personajes img { max-width: 90%;}
 
 }
 @media (max-width: 991px) and (min-width: 768px) { .container { width: 100% }
@@ -927,54 +589,30 @@ footer img{ margin-right:15px}
 	.lcc { width: 70px !important; }
 	.navbar-right.carr{ float:right !important}
 	
-	.page-id-4 .sharer{
-		
-		display:none;
-		
-		float: none !important;
-		width: 100% !important;
-		margin: 0;
-		bottom: 20px;
-		text-align:left
-	}
-	
-	.page-id-4 .sharer h4{
-		display: inline;
-		text-align: left;
-	}
-
+	.page-id-4 .sharer{display:none; float: none !important; width: 100% !important; margin: 0; bottom: 20px; text-align:left }
+  .page-id-4 .sharer h4{display: inline; text-align: left; }
   .page-id-4 footer small {padding: 0px 15px; }
-	
 	.page-id-4 .sharer .fb-like { float: right}
+
+  div#s4 .pull-right h1{font-size:17px;}
 	
 	#s1 img{ width:100px !important}
 	
-	#walker #tramoactual {
-    font-size: 25px;
-	}
+	#walker #tramoactual {font-size: 25px; }
 	
-	#walker {
-    bottom: 64px;
-    	margin-left: 10px;
-	}
+	#walker {bottom: 64px; margin-left: 10px; }
 	
-	main figure figcaption:after {
-    content: none;
-	display:none !important;
-}
+	main figure figcaption:after {content: none; display:none !important; }
 
-#hearts{
-    max-width: 430px;
-    margin: 0 auto;
-}
+  #hearts{max-width: 430px; margin: 0 auto; }
 
-.force p { font-size: 40px;}
-footer h3 {    font-size: 22px;}
+  .force p { font-size: 40px;}
+  footer h3 {    font-size: 22px;}
 
-footer p {font-size: 14px; line-height: 130%;}
+  footer p {font-size: 14px; line-height: 130%;}
 
-footer .separator{ border-color:#fff}
-footer .lst{ text-align:center}
+  footer .separator{ border-color:#fff}
+  footer .lst{ text-align:center}
 }
 
 @media (max-width: 768px) and (orientation: portrait){
@@ -1073,7 +711,7 @@ footer .lst{ text-align:center}
 	}
 	
 	.choose h1 {
-    font-size: 20px;
+    font-size: 17px !important;
     width: 170px;
     line-height: 155%;
 }
@@ -1082,6 +720,8 @@ footer .lst{ text-align:center}
     width: 28px;
     padding: 5px;
 }
+.choose .pull-right h1{padding-left:5px;}
+.choose .pull-left h1{padding-right: 5px;}
 
 #segundacam{
     position: absolute;

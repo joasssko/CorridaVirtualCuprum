@@ -5,9 +5,9 @@
             	<h3>Website</h3>
                 <ul>
                 	<li><a href="">Home</a></li>
-                	<li><a href="">Galería 2014</a></li>
-                	<li><a href="">¿Cómo ayudar?</a></li>
-                	<li><a href="">Inscríbete</a></li>
+                	<li><a href="http://www.corridacuprumteleton.cl/galeria.html" re>Galería 2014</a></li>
+                	<li><a href="http://www.corridacuprumteleton.cl/como_apoyar.html">¿Cómo ayudar?</a></li>
+                	<li><a href="http://www.corridacuprumteleton.cl/inscripcion.html" rel="nofollow">Inscríbete</a></li>
                 </ul>
             </div>
         	<div class="col-md-4 col-lg-4 col-sm-3 col-xs-7">

@@ -996,8 +996,12 @@ if($g == 'm'){
             <div class="clear"></div>
             <small>Sitio optimizado IE10+, Chrome, Firefox y Safari, Versión ajustada para dispositivos móviles Android.</small>
         </div>
+
+        <div class="iniciar hidden-md hidden-lg hidden-sm">
+        	<span class="btn btn-primary" onClick="iniciar();">Inicia tu corrida</span>
+        </div>
     
-    	<img src="<?php echo get_bloginfo('template_directory')?>/images/play.png" alt=""  onClick="iniciar();" class="hidden-md hidden-lg hidden-sm" >
+    	
     </div>
     <div id="s2" class="choose hidden">
     	<div class="time"><span><em class="fa fa-clock-o fa-fw hidden-lg hidden-md hidden-sm"></em>10</span></div>
