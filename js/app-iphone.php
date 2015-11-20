@@ -101,15 +101,15 @@ video_carrera = {
 	
 	trc1_	: 'd9QNFTyZ1V4',
 	trc2_	: 'WTITxVmzneY',
-	trc3_	: 'u37tvpm1y94',
+	trc3_	: 'IfkRFamYCJA',
 	trc4_	: 'XdLO-I_0sgI',
 	
 	trd1_	: 'w6REacl8DGQ',
 	trd2_	: 'YslHgLvnrm8',
-	trd3_	: 'XG9Pww7fnYw',
+	trd3_	: 'IfkRFamYCJA',
 	trd4_	: 'DQUghn_QhSs',
 	trd5_	: 'ADseu6lig_w',
-	trd6_	: 'wIr4xrG0Q24',
+	trd6_	: 'uyrodam4Fr8',
 	trd7_	: 'OIQy-KMwgZ8',
 	trd8_	: 'v_7qqhUyzGI'
 }
@@ -171,14 +171,14 @@ function onPlayerStateChange(event) {
 			$('#ss3').removeClass('hidden');
 			$('#controls').removeClass('layered');	
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+50' :  'var suma = aporte+50'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 		}
 		if(vid == 'vb2'){
 			$('#ss4').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+80' :  'var suma = aporte+10'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);	
 		}
 		
@@ -186,28 +186,28 @@ function onPlayerStateChange(event) {
 			$('#ss5').removeClass('hidden');
 			$('#controls').removeClass('layered');	
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+120' :  'var suma = aporte+80'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);	
 		}
 		if(vid == 'vu2'){
 			$('#ss6').removeClass('hidden');
 			$('#controls').removeClass('layered');	
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+50' :  'var suma = aporte+30'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 		}
 		if(vid == 'vu3'){
 			$('#ss7').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+50' :  'var suma = aporte+90'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);	
 		}
 		if(vid == 'vu4'){
 			$('#ss8').removeClass('hidden');
 			$('#controls').removeClass('layered');	
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+100' :  'var suma = aporte+50'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 		}
 		
@@ -216,7 +216,7 @@ function onPlayerStateChange(event) {
 			$('#meta1').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+300' :  'var suma = aporte+190'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 			$('#meta1 h3').html('<span class="fa fa-heart fa-fw hidden-lg hidden-md hidden-sm"></span> '+suma);
 			aporta(suma);	
@@ -225,7 +225,7 @@ function onPlayerStateChange(event) {
 			$('#meta2').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+100' :  'var suma = aporte+20'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 			$('#meta2 h3').html('<span class="fa fa-heart fa-fw hidden-lg hidden-md hidden-sm"></span> '+suma);
 			aporta(suma);	
@@ -234,7 +234,7 @@ function onPlayerStateChange(event) {
 			$('#meta3').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+150' :  'var suma = aporte+320'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 			$('#meta3 h3').html('<span class="fa fa-heart fa-fw hidden-lg hidden-md hidden-sm"></span> '+suma);
 			aporta(suma);	
@@ -243,7 +243,7 @@ function onPlayerStateChange(event) {
 			$('#meta4').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+500' :  'var suma = aporte+170'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 			$('#meta4 h3').html('<span class="fa fa-heart fa-fw hidden-lg hidden-md hidden-sm"></span> '+suma);
 			aporta(suma);	
@@ -261,7 +261,7 @@ function onPlayerStateChange(event) {
 			$('#meta6').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+270' :  'var suma = aporte+1210'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 			$('#meta6 h3').html('<span class="fa fa-heart fa-fw hidden-lg hidden-md hidden-sm"></span> '+suma);
 			aporta(suma);	
@@ -270,7 +270,7 @@ function onPlayerStateChange(event) {
 			$('#meta7').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+1220' :  'var suma = aporte+70'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);	
 			$('#meta7 h3').html('<span class="fa fa-heart fa-fw hidden-lg hidden-md hidden-sm"></span> '+suma);
 			aporta(suma);
@@ -279,7 +279,7 @@ function onPlayerStateChange(event) {
 			$('#meta8').removeClass('hidden');
 			$('#controls').removeClass('layered');
 			var aporte = parseInt($('#aporteactual').text() , 10);
-			<?php echo $g == 'm' ? 'var suma = aporte+70' :  'var suma = aporte+710'  ; ?>;
+			<?php echo $g == 'm' ? 'var suma = aporte+800' :  'var suma = aporte+350'  ; ?>;
 			$('#aporteactual').html('<div class="fa fa-heart fa-fw"></div> '+suma);
 			$('#meta8 h3').html('<span class="fa fa-heart fa-fw hidden-lg hidden-md hidden-sm"></span> '+suma);
 			aporta(suma);
@@ -400,10 +400,14 @@ function inicia(){
     <div id="paso-0">
     	
         <div class="infocarrera">
-            <p>Corre por el corazón de la ciudad y elige caminos para seguir tu trayecto. Cada elección que tomes sumará un numero diferente de corazones. </p>
-            <p>¡Necesitamos 17 millones de corazones!</p>
-            <div class="btn btn-primary" onClick="inicia()">¡Vamos a correr!</div>
-            <small>(Por restricciones del SO. deberás dar "Play" en cada inicio del video)</small>
+            <p></p>
+            <p><strong>¡Necesitamos 17 millones de corazones!</strong></p>
+            <div class="clear"></div>
+            <div class="btn btn-primary" onClick="inicia()">Inicia tu corrida</div>
+            <div class="clear"></div>
+            <small>(Por restricciones de IOS elige tu camino y luego presiona <span class="fa fa-play fa-fw"></span>play para seguir la carrera)</small>
+            <small>Sitio optimizado <i class="fa fa-internet-explorer"></i>IE10+, <i class="fa fa-chrome"></i> Chrome, <i class="fa fa-firefox"></i> Firefox y <i class="fa fa-safari"></i> Safari, y <i class="fa fa-android"></i>Android.</small>
+            
         </div>
     	
     </div>
@@ -419,7 +423,7 @@ function inicia(){
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btt2()">
-                	Lastarria 
+                	Calle Nueva York 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -431,12 +435,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btu1()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Lastarria
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btu2()">
-                	Lastarria 
+                	Paris y Londres 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -447,12 +451,12 @@ function inicia(){
            <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btu3()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Plaza Constitución
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btu4()">
-                	Lastarria 
+                	San Diego 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -464,12 +468,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv1()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Bellas Artes
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btv2()">
-                	Lastarria 
+                	Santa Lucía 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -481,12 +485,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv3()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Paris y Londres II
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btv4()">
-                	Lastarria 
+                	Torre Estacionamientos 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -498,12 +502,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv5()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Calle en construcción
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btv6()">
-                	Lastarria 
+                	Tribunales de Justicia 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -515,12 +519,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv7()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Paseo Bulnes
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btv8()">
-                	Lastarria 
+                	Parque Almagro 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -705,12 +709,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btt1()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Mercado Central
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btt2()">
-                	Lastarria 
+                	Parque Forestal 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -722,12 +726,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btu1()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Parque Los Reyes
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btu2()">
-                	Lastarria 
+                	Puente 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -738,12 +742,12 @@ function inicia(){
            <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btu3()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    La Chascona
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btu4()">
-                	Lastarria 
+                	Parque de las Esculturas 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -755,12 +759,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv1()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Barrio Yungay
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btv2()">
-                	Lastarria 
+                	Concha y Toro 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -772,12 +776,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="bttv3()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    La Vega
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btv4()">
-                	Lastarria 
+                	Recoleta 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -789,12 +793,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv5()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Subida San Cristóbal
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btv6()">
-                	Lastarria 
+                	Virgen San Cristóbal 
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>
@@ -806,12 +810,12 @@ function inicia(){
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv7()">
                 	<span class="fa fa-angle-double-left fa-fw pull-left"></span> 
-                    Universidad de Chile
+                    Parque Bicentenario
                 </h1>
             </div>
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">		
                 <h1 onClick="btv8()">
-                	Lastarria 
+                	Parque Juan Pablo II
                 	<span class="fa fa-angle-double-right fa-fw pull-right"></span>
                 </h1>
             </div>

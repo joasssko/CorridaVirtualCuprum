@@ -17,7 +17,16 @@ $detect = new Mobile_Detect;?>
 
 <?php }else{?>
 	
-	<?php get_template_part('js/app')?>
+   
+    <?php 
+	if (strpos($_SERVER['HTTP_USER_AGENT'], 'Safari') && !strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome')) {
+		$browser = 'Safari';
+		get_template_part('js/app-safari');
+	}else{
+	?>
+    <?php get_template_part('js/app');?>
+	<?php }?>
+	
 <audio src="<?php echo get_bloginfo('template_directory')?>/sounds/bg.mp3" id="bgmusic" loop>
 <p>If you are reading this, it is because your browser does not support the audio element.     </p>
 <embed src="<?php echo get_bloginfo('template_directory')?>/sounds/bg.mp3" width="180" height="90" hidden="true" />
@@ -500,7 +509,9 @@ if($g == 'm'){
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
                 	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span> Twittear</a>
-                    
+                    <div class="volver">
+                        <a href="<?php echo get_bloginfo('url')?>"><img src="<?php echo get_bloginfo('template_directory')?>/images/volver.png" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>

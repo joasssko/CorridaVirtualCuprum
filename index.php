@@ -75,6 +75,7 @@ $preunido = ($llevamos * 100)/$total;
                 </figure>
             </div>
             
+            
             <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6 box">
             	<figure>
                 	
@@ -86,6 +87,10 @@ $preunido = ($llevamos * 100)/$total;
                         <img src="<?php echo get_bloginfo('template_directory')?>/images/box-2.jpg" class="img-responsive" alt="">
                     </a>
                 </figure>
+            </div>
+
+            <div class="clear hidden-md hidden-sm hidden-lg">
+                
             </div>
             
             <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6 box">

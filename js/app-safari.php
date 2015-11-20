@@ -1,5 +1,5 @@
 <script>
-console.log('desktop');
+console.log('desktop || safari');
 <?php $im = get_post_thumbnail_id('4');?>
 <?php $ima = wp_get_attachment_image_src($im , 'full');?>
 
@@ -320,10 +320,10 @@ function aporta(corazones){
   
 function iniciar(){
 	player.setVolume(0);
-	player.setPlaybackQuality('medium')
+	player.setPlaybackQuality('large')
 	player.playVideo();
 	playerb.setVolume(0);
-	playerb.setPlaybackQuality('medium')
+	playerb.setPlaybackQuality('large')
 	playerb.playVideo();
 	$('#s1').addClass('hidden');
 	$('#walker').removeClass('hidden');
@@ -471,8 +471,8 @@ function iniciar(){
 			
 			player.cueVideoById(video_carrera.trb1);
 			playerb.cueVideoById(video_carrera.trb1_);
-			player.setPlaybackQuality('medium');
-			playerb.setPlaybackQuality('medium');
+			player.setPlaybackQuality('large');
+			playerb.setPlaybackQuality('large');
 			
 			setTimeout( au1() , 2000 );
 			
@@ -495,8 +495,8 @@ function iniciar(){
 			
 			player.cueVideoById(video_carrera.trc1);
 			playerb.cueVideoById(video_carrera.trc1_);
-			player.setPlaybackQuality('medium');
-			playerb.setPlaybackQuality('medium');
+			player.setPlaybackQuality('large');
+			playerb.setPlaybackQuality('large');
 			
 			setTimeout( auc1() , 2000 );
 			function auc1(){
@@ -517,8 +517,8 @@ function iniciar(){
 			
 			player.cueVideoById(video_carrera.trc3);
 			playerb.cueVideoById(video_carrera.trc3_);
-			player.setPlaybackQuality('medium');
-			playerb.setPlaybackQuality('medium');
+			player.setPlaybackQuality('large');
+			playerb.setPlaybackQuality('large');
 			
 			setTimeout( auc3() , 2000 );
 			function auc3(){
@@ -541,8 +541,8 @@ function iniciar(){
 			
 			player.cueVideoById(video_carrera.trd1);
 			playerb.cueVideoById(video_carrera.trd1_);
-			player.setPlaybackQuality('medium');
-			playerb.setPlaybackQuality('medium');
+			player.setPlaybackQuality('large');
+			playerb.setPlaybackQuality('large');
 			
 			setTimeout( aud1() , 2000 );
 			function aud1(){
@@ -564,8 +564,8 @@ function iniciar(){
 			
 			player.cueVideoById(video_carrera.trd3);
 			playerb.cueVideoById(video_carrera.trd3_);
-			player.setPlaybackQuality('medium');
-			playerb.setPlaybackQuality('medium');
+			player.setPlaybackQuality('large');
+			playerb.setPlaybackQuality('large');
 			
 			setTimeout( aud3() , 2000 );
 			function aud3(){
@@ -587,8 +587,8 @@ function iniciar(){
 			
 			player.cueVideoById(video_carrera.trd5);
 			playerb.cueVideoById(video_carrera.trd5_);
-			player.setPlaybackQuality('medium');
-			playerb.setPlaybackQuality('medium');
+			player.setPlaybackQuality('large');
+			playerb.setPlaybackQuality('large');
 			
 			setTimeout( aud5() , 2000 );
 			function aud5(){
@@ -610,8 +610,8 @@ function iniciar(){
 			
 			player.cueVideoById(video_carrera.trd7);
 			playerb.cueVideoById(video_carrera.trd7_);
-			player.setPlaybackQuality('medium');
-			playerb.setPlaybackQuality('medium');
+			player.setPlaybackQuality('large');
+			playerb.setPlaybackQuality('large');
 
 			setTimeout( aud7() , 2000 );
 			function aud7(){
@@ -653,8 +653,8 @@ function hb1(lugar){
 	
 	player.cueVideoById(video_carrera.trb1);
 	playerb.cueVideoById(video_carrera.trb1_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pv1() , 2000);
 	
 	function pv1(){
@@ -678,8 +678,8 @@ function hb2(lugar){
 	
 	player.cueVideoById(video_carrera.trb2);
 	playerb.cueVideoById(video_carrera.trb2_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pv2() , 2000);
 	
 	function pv2(){
@@ -704,8 +704,8 @@ function hc1(lugar){
 	
 	player.cueVideoById(video_carrera.trc1);
 	playerb.cueVideoById(video_carrera.trc1_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvc1() , 2000);
 	
 	function pvc1(){
@@ -729,8 +729,8 @@ function hc2(lugar){
 	
 	player.cueVideoById(video_carrera.trc2);
 	playerb.cueVideoById(video_carrera.trc2_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvc2() , 2000);
 	
 	function pvc2(){
@@ -753,8 +753,8 @@ function hc3(lugar){
 	
 	player.cueVideoById(video_carrera.trc3);
 	playerb.cueVideoById(video_carrera.trc3_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvc3() , 2000);
 	
 	function pvc3(){
@@ -777,8 +777,8 @@ function hc4(lugar){
 	
 	player.cueVideoById(video_carrera.trc4);
 	playerb.cueVideoById(video_carrera.trc4_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvc4() , 2000);
 	
 	function pvc4(){
@@ -802,8 +802,8 @@ function hd1(lugar){
 	
 	player.cueVideoById(video_carrera.trd1);
 	playerb.cueVideoById(video_carrera.trd1_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvh1() , 2000);
 	
 	function pvh1(){
@@ -826,8 +826,8 @@ function hd2(lugar){
 	
 	player.cueVideoById(video_carrera.trd2);
 	playerb.cueVideoById(video_carrera.trd2_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvh2() , 2000);
 	
 	function pvh2(){
@@ -850,8 +850,8 @@ function hd3(lugar){
 	
 	player.cueVideoById(video_carrera.trd3);
 	playerb.cueVideoById(video_carrera.trd3_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvh3() , 2000);
 	
 	function pvh3(){
@@ -874,8 +874,8 @@ function hd4(lugar){
 	
 	player.cueVideoById(video_carrera.trd4);
 	playerb.cueVideoById(video_carrera.trd4_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvh4() , 2000);
 	
 	function pvh4(){
@@ -898,8 +898,8 @@ function hd5(lugar){
 	
 	player.cueVideoById(video_carrera.trd5);
 	playerb.cueVideoById(video_carrera.trd5_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvh5() , 2000);
 	
 	function pvh5(){
@@ -922,8 +922,8 @@ function hd6(lugar){
 	
 	player.cueVideoById(video_carrera.trd6);
 	playerb.cueVideoById(video_carrera.trd6_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvh6() , 2000);
 	
 	function pvh6(){
@@ -946,8 +946,8 @@ function hd7(lugar){
 	
 	player.cueVideoById(video_carrera.trd7);
 	playerb.cueVideoById(video_carrera.trd7_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvh7() , 2000);
 	
 	function pvh7(){
@@ -970,8 +970,8 @@ function hd8(lugar){
 	
 	player.cueVideoById(video_carrera.trd8);
 	playerb.cueVideoById(video_carrera.trd8_);
-	player.setPlaybackQuality('medium');
-	playerb.setPlaybackQuality('medium');
+	player.setPlaybackQuality('large');
+	playerb.setPlaybackQuality('large');
 	setTimeout( pvh8() , 2000);
 	
 	function pvh8(){

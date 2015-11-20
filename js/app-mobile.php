@@ -112,14 +112,14 @@ video_carrera = {
 	trd1_	: 'w6REacl8DGQ',
 	trd2	: 'Tl1eBkLd4JA',
 	trd2_	: 'YslHgLvnrm8',
-	trd3	: '5WX6GtDF_LY',
-	trd3_	: 'XG9Pww7fnYw',
+	trd3	: 'FL3TouuXXcs',
+	trd3_	: 'IfkRFamYCJA',
 	trd4	: 'Pux8GM3vh9o',
 	trd4_	: 'DQUghn_QhSs',
 	trd5	: 'KCDYdFoC_JU',
 	trd5_	: 'ADseu6lig_w',
-	trd6	: 'DSiNrvvPeE0',
-	trd6_	: 'wIr4xrG0Q24',
+	trd6	: 'KiTyFi9PNwU',
+	trd6_	: 'uyrodam4Fr8',
 	trd7	: 'q9ZXBGVnwE8',
 	trd7_	: 'OIQy-KMwgZ8',
 	trd8	: 'Knm0WPhVQZg',
@@ -187,10 +187,10 @@ function onPlayerReady(event) {
 	//event.target.playVideo();	
 }
 
-function onPlayerStateChange(event) {
+function onPlayerStateChangetercera(event) {
 	
 	 if(event.data == YT.PlayerState.PLAYING){
-		tvid = player.getDuration();
+		tvid = playerb.getDuration();
 		tvidd = Math.round(tvid);
 		//console.log('total'+tvidd);
 	}
@@ -288,7 +288,7 @@ function onPlayerReadytercera(event) {
 	//event.target.playVideo();	
 }
 
-function onPlayerStateChangetercera(event) {
+function onPlayerStateChange(event) {
 	//event.target.playVideo();	
 }
 
