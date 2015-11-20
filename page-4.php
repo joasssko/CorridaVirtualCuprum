@@ -4,7 +4,7 @@
 include 'mobiledetect.php';
 $detect = new Mobile_Detect;?>
 <?php if($detect->isIphone()){?>
-
+<!-- Hola -->
 	<?php get_template_part('js/app-iphone')?>
     
 <?php }elseif($detect->isIpad()){?>
@@ -40,7 +40,7 @@ if($g == 'm'){
             <span class="btn btn-primary" onClick="iniciar();">Inicia tu corrida</span>
             <div>Corre cuantas veces quieras, cada carrera suma.</div>
             <div class="clear"></div>
-            <small>Sitio optimizado IE10+, Chrome, Firefox y Safari, Versión ajustada para dispositivos móviles Android.</small>
+            <small>Sitio optimizado <i class="fa fa-internet-explorer"></i>IE10+, <i class="fa fa-chrome"></i> Chrome, <i class="fa fa-firefox"></i> Firefox y <i class="fa fa-safari"></i> Safari, Versión ajustada para dispositivos móviles <i class="fa fa-android"></i>Android.</small>
         </div>
     
     	<img src="<?php echo get_bloginfo('template_directory')?>/images/play.png" alt=""  onClick="iniciar();" class="hidden-md hidden-lg hidden-sm" >
@@ -120,7 +120,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -142,7 +142,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -164,7 +164,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -186,7 +186,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -208,7 +208,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -230,7 +230,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -252,7 +252,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -274,7 +274,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -294,7 +294,7 @@ if($g == 'm'){
 <div id="controles" class="blued">
 	<div id="s1">
     	<div class="iniciar hidden-xs">
-        	<div class="infocarrera hidden-xs">Corre por el corazón de la ciudad y elige  caminos para seguir tu trayecto. Cada elección que tomes sumará un numero diferente de corazones.
+        	<div class="infocarrera hidden-xs">Corre por el corazón de la ciudad y elige  caminos para seguir tu trayecto. Cada elección que tomes sumará un número diferente de corazones.
             <br>
             
             <strong>¡Necesitamos 17 millones de corazones!</strong>
@@ -302,7 +302,7 @@ if($g == 'm'){
             <span class="btn btn-primary" onClick="iniciar();">Inicia tu corrida</span>
             <div>Corre cuantas veces quieras, cada carrera suma.</div>
             <div class="clear"></div>
-            <small>Sitio optimizado IE10+, Chrome, Firefox y Safari, Versión ajustada para dispositivos móviles Android.</small>
+            <small>Sitio optimizado <i class="fa fa-internet-explorer"></i> IE10+, <i class="fa fa-chrome"></i> Chrome, <i class="fa fa-firefox"></i> Firefox y <i class="fa fa-safari"></i> Safari, Versión ajustada para dispositivos móviles <i class="fa fa-android"></i> Android.</small>
         </div>
     
     	<img src="<?php echo get_bloginfo('template_directory')?>/images/play.png" alt="" class="hidden-md hidden-lg hidden-sm"  onClick="iniciar();">
@@ -333,7 +333,7 @@ if($g == 'm'){
     		<h1 onClick="hc3($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> La Chascona</h1>
         </div>
         <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
-    		<h1 onClick="hc4($(this).text())">Parque de las Esculturas <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
+    		<h1 onClick="hc4($(this).text())">Parque Esculturas <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     
@@ -371,7 +371,8 @@ if($g == 'm'){
 	        <h1 onClick="hd7($(this).text())"><span class="fa fa-angle-double-left fa-fw pull-left"></span> Parque Bicentenario</h1>
         </div>
         <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-right">
-    		<h1 onClick="hd8($(this).text())">Parque A. Hurtado <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
+    		<h1 onClick="hd8($(this).text())">Parque Juan Pablo II
+ <span class="fa fa-angle-double-right fa-fw pull-right"></span></h1>
         </div>
     </div>
     
@@ -384,7 +385,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -406,7 +407,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -428,7 +429,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -450,7 +451,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -472,7 +473,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -512,7 +513,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -534,7 +535,7 @@ if($g == 'm'){
                 <div class="clear"></div>
                 <h2>Tu aporte</h2>
                 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazones.png" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
                 <h3>1</h3>
                 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -579,8 +580,9 @@ if($g == 'm'){
 </div>
 
 <div class="embed-responsive embed-responsive-16by9">
-	<div id="player" data-v="inicio" class="embed-responsive-item"></div>
-    <div id="playertercera" class="embed-responsive-item hidden"></div>
+	<div id="playertercera" class="embed-responsive-item"></div>
+	<div id="player" data-v="inicio" class="embed-responsive-item hidden"></div>
+    
 </div>
 
 <div class="sharer pull-right">

@@ -321,6 +321,12 @@ function iniciar(){
 	player.setVolume(0);
 	player.setPlaybackQuality('small')
 	player.playVideo();
+	
+	
+	playerb.setVolume(0);
+	playerb.setPlaybackQuality('small')
+	playerb.playVideo();
+	
 	$('#s1').addClass('hidden');
 	$('#walker').removeClass('hidden');
 	$('#controles').removeClass('blued');
@@ -349,7 +355,7 @@ function iniciar(){
 				music.get(0).play();
 				
 				vid = 'paso-1';
-				$('#tercera').removeClass('hidden')
+				$('#primera').removeClass('hidden')
 				//$('#colors').addClass('per25');
 				//$('#stiky').addClass('per25');
 				
@@ -983,7 +989,7 @@ if($g == 'm'){
 
 
 <div id="controles" class="blued">
-	<div id="s1">
+	<div id="s1" class="mob-horizontal">
     
     	<div class="iniciar hidden-xs">
         	<div class="infocarrera hidden-xs">Corre por el corazón de la ciudad y elige  caminos para seguir tu trayecto. Cada elección que tomes sumará un numero diferente de corazones.
@@ -994,7 +1000,7 @@ if($g == 'm'){
             <span class="btn btn-primary" onClick="iniciar();">Inicia tu corrida</span>
             <div>Corre cuantas veces quieras, cada carrera suma.</div>
             <div class="clear"></div>
-            <small>Sitio optimizado IE10+, Chrome, Firefox y Safari, Versión ajustada para dispositivos móviles Android.</small>
+            <small>Sitio optimizado <i class="fa fa-internet-explorer"></i>IE10+, <i class="fa fa-chrome"></i>Chrome, <i class="fa fa-firefox"></i>Firefox y <i class="fa fa-safari"></i>Safari, Versión ajustada para dispositivos móviles Android.</small>
         </div>
 
         <div class="iniciar hidden-md hidden-lg hidden-sm">
@@ -1250,7 +1256,7 @@ if($g == 'm'){
 </div>
 <?php }else{?>
 <div id="controles" class="blued">
-	<div id="s1">
+	<div id="s1" class="mob-horizontal">
     	<div class="iniciar hidden-xs">
         	<div class="infocarrera hidden-xs">Corre por el corazón de la ciudad y elige  caminos para seguir tu trayecto. Cada elección que tomes sumará un numero diferente de corazones.
             <br>
@@ -1262,8 +1268,12 @@ if($g == 'm'){
             <div class="clear"></div>
             <small>Sitio optimizado IE10+, Chrome, Firefox y Safari, Versión ajustada para dispositivos móviles Android.</small>
         </div>
+
+        <div class="iniciar hidden-md hidden-lg hidden-sm ">
+        	<span class="btn btn-primary" onclick="iniciar();">Inicia tu corrida</span>
+        </div>
     
-    	<img src="<?php echo get_bloginfo('template_directory')?>/images/play.png" alt="" class="hidden-md hidden-lg hidden-sm"  onClick="iniciar();">
+    	
     </div>
     <div id="s2" class="choose hidden">
 		<div class="time"><span><em class="fa fa-clock-o fa-fw hidden-lg hidden-md hidden-sm"></em>10</span></div>
@@ -1537,8 +1547,8 @@ if($g == 'm'){
 </div>
 
 <div class="embed-responsive embed-responsive-16by9">
-	<div id="player" data-v="inicio" class="embed-responsive-item"></div>
-    <div id="playertercera" class="embed-responsive-item hidden"></div>
+	<div id="playertercera" class="embed-responsive-item "></div>
+	<div id="player" data-v="inicio" class="embed-responsive-item hidden"></div>
 </div>
 
 <div class="sharer pull-right">

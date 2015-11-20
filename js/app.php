@@ -320,6 +320,9 @@ function iniciar(){
 	player.setVolume(0);
 	player.setPlaybackQuality('medium')
 	player.playVideo();
+	playerb.setVolume(0);
+	playerb.setPlaybackQuality('medium')
+	playerb.playVideo();
 	$('#s1').addClass('hidden');
 	$('#walker').removeClass('hidden');
 	$('#controles').removeClass('blued');
@@ -348,7 +351,7 @@ function iniciar(){
 				music.get(0).play();
 				
 				vid = 'paso-1';
-				$('#tercera').removeClass('hidden')
+				$('#primera').removeClass('hidden')
 				$('#colors').addClass('per25');
 				$('#stiky').addClass('per25');
 				$('.ownaporte .filler').addClass('per25');
