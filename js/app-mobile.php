@@ -1005,6 +1005,11 @@ if($g == 'm'){
 
         <div class="iniciar hidden-md hidden-lg hidden-sm">
         	<span class="btn btn-primary" onClick="iniciar();">Inicia tu corrida</span>
+        	<small>Para una mayor experiencia, podrás cambiar la perspectiva de la carrera, presionando los siguientes botones:</small>
+        	<ul class="optional">
+        		<li><img class="" src="<?php echo get_bloginfo('template_directory');?>/images/1era-mobile.png" alt=""></li>
+        		<li><img class="" src="<?php echo get_bloginfo('template_directory');?>/images/3era-mobile.png" alt=""></li>
+        	</ul>
         </div>
     
     	
@@ -1269,9 +1274,15 @@ if($g == 'm'){
             <small>Sitio optimizado IE10+, Chrome, Firefox y Safari, Versión ajustada para dispositivos móviles Android.</small>
         </div>
 
-        <div class="iniciar hidden-md hidden-lg hidden-sm ">
-        	<span class="btn btn-primary" onclick="iniciar();">Inicia tu corrida</span>
+        <div class="iniciar hidden-md hidden-lg hidden-sm">
+        	<span class="btn btn-primary" onClick="iniciar();">Inicia tu corrida</span>
+        	<small>Para una mayor experiencia, podrás cambiar la perspectiva de la carrera, presionando los siguientes botones:</small>
+        	<ul class="optional">
+        		<li><img class="" src="<?php echo get_bloginfo('template_directory');?>/images/1era-mobile.png" alt=""></li>
+        		<li><img class="" src="<?php echo get_bloginfo('template_directory');?>/images/3era-mobile.png" alt=""></li>
+        	</ul>
         </div>
+
     
     	
     </div>
@@ -1556,7 +1567,7 @@ if($g == 'm'){
 	<?php /* <div class="fb-like" data-href="https://www.facebook.com/CuprumAFP" data-width="180" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div> */?>
     
     <span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span><span class="hidden-xs"> Compartir</span></span>
-                	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span><span class="hidden-xs"> Twittear</span></a>
+                	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu también por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton @CuprumAFP" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span><span class="hidden-xs"> Twittear</span></a>
     
 </div>
 

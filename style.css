@@ -294,9 +294,16 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 .lcc{position: absolute; top: 0; margin: 0 auto; right: 0; left: 0;}
 
 
-.ownaporte{ width:82px; ; position:relative}
+.ownaporte{ width:82px; background-color: #00336A; position:relative}
 .ownaporte .filler {width: 1px; z-index: 0; position: absolute; background-color: #f30; top: 0; left: 20px; bottom: 0; right: 20px; /*margin:0 20px;*/ ;}
-.ownaporte .heart {position: relative; z-index: 1; top: 0; }
+.ownaporte .heart {position: relative; z-index: 1; top: 0; background-image: url(images/corazon_clip_azul.svg);}
+.ownaporte .heart img {
+        animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
+        -webkit-animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
+        -moz-animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
+        -ms-animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
+        -o-animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
+}
 .ownaporte #aporteactual{ font-family:akzidenz, helvetica, arial, sans-serif; font-weight:300; font-size:25px; color:#fff; text-align:center; display:block; background-color:#00336a}
 .ownaporte b {color: #fff; text-align: center; display: block; font-size: 18px; background-color: #e63039; font-weight: 300; font-family: akzidenz, helvetica, arial, sans-serif; padding: 5px 0; }
 
@@ -378,13 +385,13 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 a.returned{}
 a.returned:hover{}
 
-main {background-image: url(images/main.png); background-repeat: no-repeat; background-color: #1a3668; background-size: 140% auto; background-position: top 3%; padding-top: 400px; }
-
 .force{ padding:150px 0}
 .force p{ font-size:80px; color:#fff; font-family:akzidenz , helvetica, arial, sans-serif; text-align:center}
 .force > *{ display:block; clear:both; line-height:100%}
 .force span{display:block; clear:both; line-height:100%; color:#ffa409}
 .force strong{ font-family:sgb, helvetica, arial, sans-serif; text-transform:uppercase;}
+
+main {background-image: url(images/main.png); background-repeat: no-repeat; background-color: #1a3668; background-size: 140% auto; background-position: top 3%; padding-top: 400px; }
 
 main figure figcaption{ position:relative;  background-color:#122548; padding:15px 15px 5px 15px; }
 main figure figcaption:after {content: ''; width: 100%; height: 0; border-style: solid; border-width: 30px 150px 0 150px; border-color: #122548 transparent transparent transparent; position: absolute; left: 0; right: 0; bottom: -30px; }
@@ -401,7 +408,7 @@ main figure figcaption p{ color:#fff; font-family:open sans, helvetica, arial, s
 #s1{position: absolute; margin: 0 auto; display: inline-block; text-align: center; } 
 #s1{ width:600px; height:300px;}
 #s1 .infocarrera{color: #fff; font-size: 16px; line-height: 150%; margin-bottom: 20px; }
-#s1  small{ color:#fff; line-height:100%; margin-top: 10px; display:inline-block; font-size: 13px;
+#s1  small{ color:#fff; line-height:100%; margin-top: 5px; margin-bottom: 5px;display:inline-block; font-size: 13px;
     line-height: 1.5em;}
 #s1 .btn {font-size: 20px; text-transform: uppercase; border-radius: 5px; font-weight: 900; background-color: #ffa409; font-family: 'akzidenz', helvetica, arial, sans-serif; padding: 10px 20px; border: none; margin-bottom: 20px; }
 #s1 .btn:hover {color: #fff; background: #D8840B; }
@@ -441,6 +448,16 @@ div#s4 .pull-right h1 {font-size: 34px; }
 
 .iniciar{color:#fff;}
 
+.volver a {display: inline-block; transition:all .3s ease-in;}
+.volver a img {transition:all .3s ease-in; }
+.volver a img:hover {opacity: .5; }
+#avisob{ display:none;}
+
+ul.optional {width: 100%; max-width: 320px; margin: 0 auto; display: inline-block; }
+.optional li {float: left; list-style: none; padding: 5px 35px; }
+
+.chooose.men{background:url(images/stop-hombre.jpg); background-size:cover; background-position:center;}
+.chooose.women{background:url(images/stop-mujer.jpg); background-size:cover; background-position:center;}
 
 /*************************************************************************************/
 /***********************************Contact F7****************************************/
@@ -483,6 +500,7 @@ footer img{ margin-right:15px}
 .page-id-4 footer small{ padding:15px;}
 
 .ajax-loader { display: none!important }
+
 
 /*************************************************************************************/
 /***********************************Responsive Shit***********************************/
@@ -656,7 +674,10 @@ footer img{ margin-right:15px}
 	.page-id-4 .sharer .fb-like { float: right}
 	
 	#s1 img{ width:100px !important}
-	
+    ul.optional {width: 100%; margin: 0 auto; display: inline-block; max-width: 222px; }
+    .optional li {float: left; list-style: none; padding: 10px 2%; display: inline-block; }
+    .optional img {max-width: 150px; width: 100% !important; height: auto; }
+
 	#walker #tramoactual {font-size: 25px; } 
     #walker {bottom: 64px; margin-left: 10px; }
 	
@@ -697,16 +718,13 @@ footer img{ margin-right:15px}
     footer h3{font-size:28px;}
 }
 
-.volver a {display: inline-block; transition:all .3s ease-in;}
-.volver a img {transition:all .3s ease-in; }
-.volver a img:hover {opacity: .5; }
-#avisob{ display:none}
+/*************************************************************************************/
+/************************************ANIMATION****************************************/
+/*************************************************************************************/
 
 
-/***animated****/
-
-.animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
-.animated.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+    .animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+    .animated.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
     @-webkit-keyframes swing {
       20% {
         -webkit-transform: rotate3d(0, 0, 1, 15deg);
@@ -753,7 +771,8 @@ footer img{ margin-right:15px}
     }
 
 .swing { -webkit-transform-origin: top center; transform-origin: top center; -webkit-animation-name: swing; animation-name: swing;} 
-    @-webkit-keyframes pulse {
+
+@-webkit-keyframes pulse2 {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -770,7 +789,7 @@ footer img{ margin-right:15px}
   }
 }
 
-@keyframes pulse {
+@keyframes pulse2 {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -787,4 +806,5 @@ footer img{ margin-right:15px}
   }
 }
 
-.pulse { -webkit-animation-name: pulse; animation-name: pulse;}
+.pulse2 { -webkit-animation-name: pulse2; animation-name: pulse2;}
+

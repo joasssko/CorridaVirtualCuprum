@@ -14,7 +14,9 @@ footer h3{font-size:30px !important;}
 #paso-0 .infocarrera {color: #fff; font-size: 12px; line-height: 150%; margin: 100px 20px; }
 
 #paso-0 small {color: #fff; line-height: 100%; margin-top: 10px; display: block; clear: both; }
-#paso-0 .btn {font-size: 16px; text-transform: uppercase; border-radius: 0; font-weight: 900; background-color: #ffa409; padding: 10px 30px; clear: both; display: inline-block; }
+#paso-0 .btn {font-size: 16px; text-transform: uppercase; border-radius: 5px; font-weight: 900; background-color: #ffa409; font-family: 'akzidenz', helvetica, arial, sans-serif; padding: 10px 20px; border: none;     margin-bottom: 5px; }
+
+
 
 #controls{position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; right: 0; transition:all .3s ease-in }
 #controls.blued{ background-color:#1a3668;}
@@ -30,6 +32,8 @@ footer h3{font-size:30px !important;}
 .chooose .pull-right h1 {padding:0 0 0 20px; text-align:left; cursor:pointer }
 .chooose h1 span {background-color: #ea393a; padding: 10px 10px; text-align: center; width: 30px; animation: pulse infinite .5s ease-in; }
 
+#s1 .btn {font-size: 20px; text-transform: uppercase; border-radius: 5px; font-weight: 900; background-color: #ffa409; font-family: 'akzidenz', helvetica, arial, sans-serif; padding: 10px 20px; border: none; margin-bottom: 20px; }
+
 @-webkit-keyframes pulse { 
 	0% { background-color:#ea393a }
     100% { background-color:#be2627 }
@@ -38,7 +42,6 @@ footer h3{font-size:30px !important;}
 	0% { background-color:#ea393a }
     100% { background-color:#be2627 }
 }
-
 
 .meta{background-color:rgba(26, 54, 104 , 1); position:fixed; top: 0; bottom:0 ; left:0 ; right: 0}
 	
@@ -52,3 +55,20 @@ footer h3{font-size:30px !important;}
 .meta .insmeta{ margin:13% 0}
 .meta .result{ text-align:center; color:#fff;} 
 
+.chooose.men{background:url(images/stop-hombre.jpg); background-size:cover; background-position:center;}
+.chooose.women{background:url(images/stop-mujer.jpg); background-size:cover; background-position:center;}
+
+.blued.topper {padding-top: 13%; }
+
+
+.ipad .chooose h1 {font-family: akzidenz, helvetica, arial, sans-serif; font-weight: 300; display: inline-block; margin: 50% auto; color: #fff; background-color: #14408e; padding: 0 30px 0 0; text-align: right; line-height: 220%; transition: all .3s ease-in; cursor: pointer; font-size: 28px; width: 100%; }
+.ipad .chooose h1:hover {background-color: #ffa409; }
+.ipad .chooose h1:hover span {}
+.ipad .chooose .pull-right h1 {padding:0 0 0 20px; text-align:left; cursor:pointer }
+.ipad .chooose h1 span {background-color: #ea393a; padding: 18px 10px; text-align: center; width: 60px; animation: pulse infinite .5s ease-in; }
+
+.ipad #paso-0 .infocarrera {color: #fff; font-size: 18px; line-height: 150%; margin: 100px 80px; }
+
+.ipad #paso-0 .btn {font-size: 30px; text-transform: uppercase; border-radius: 5px; font-weight: 900; background-color: #ffa409; font-family: 'akzidenz', helvetica, arial, sans-serif; padding: 10px 20px; border: none;     margin: 15px 0; }
+
+#supersized{background:#102446;}

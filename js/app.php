@@ -45,7 +45,9 @@ jQuery(document).ready(function($) {
 
 $.getScript('https://www.youtube.com/iframe_api');
 
-videoinicio = 'kH8SWlzHt4k';
+//videoinicio = 'kH8SWlzHt4k';
+//con intro audio
+videoinicio = '9I4-7FOLRo4';
 
 <?php 
 $g = $_GET['g'];
@@ -112,8 +114,8 @@ video_carrera = {
 	trd1_	: 'w6REacl8DGQ',
 	trd2	: 'Tl1eBkLd4JA',
 	trd2_	: 'YslHgLvnrm8',
-	trd3	: 'FL3TouuXXcs',
-	trd3_	: 'IfkRFamYCJA',
+	trd3	: '5WX6GtDF_LY',
+	trd3_	: 'XG9Pww7fnYw',
 	trd4	: 'Pux8GM3vh9o',
 	trd4_	: 'DQUghn_QhSs',
 	trd5	: 'KCDYdFoC_JU',
@@ -322,7 +324,7 @@ function iniciar(){
 	player.setVolume(0);
 	player.setPlaybackQuality('medium')
 	player.playVideo();
-	playerb.setVolume(0);
+	
 	playerb.setPlaybackQuality('medium')
 	playerb.playVideo();
 	$('#s1').addClass('hidden');
@@ -346,6 +348,9 @@ function iniciar(){
 			player.cueVideoById(video_carrera.tra1);
 			
 			function pv(){
+				
+				playerb.setVolume(0);
+				player.setVolume(0);
 				playerb.playVideo();
 				player.playVideo();
 				

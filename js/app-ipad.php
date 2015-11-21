@@ -396,7 +396,7 @@ function inicia(){
 </div>
 
     
-<div id="controls" class="blued">
+<div id="controls" class="blued topper ipad">
     <div id="paso-0">
     	
         <div class="infocarrera">
@@ -412,7 +412,7 @@ function inicia(){
     </div>
     
     <?php if($g == 'm'){?>
-        <div id="ss2" class="hidden chooose">
+        <div id="ss2" class="hidden chooose men">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btt1()">
@@ -429,7 +429,7 @@ function inicia(){
             
         </div>
         
-        <div id="ss3" class="hidden chooose">
+        <div id="ss3" class="hidden chooose men">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btu1()">
@@ -445,7 +445,7 @@ function inicia(){
             </div>
             
         </div>
-        <div id="ss4" class="hidden chooose">
+        <div id="ss4" class="hidden chooose men">
            
            <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btu3()">
@@ -462,7 +462,7 @@ function inicia(){
            
         </div>
         
-        <div id="ss5" class="hidden chooose">
+        <div id="ss5" class="hidden chooose men">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv1()">
@@ -479,7 +479,7 @@ function inicia(){
             
         </div>
         
-        <div id="ss6" class="hidden chooose">
+        <div id="ss6" class="hidden chooose men">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv3()">
@@ -496,7 +496,7 @@ function inicia(){
             
         </div>
         
-        <div id="ss7" class="hidden chooose">
+        <div id="ss7" class="hidden chooose men">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv5()">
@@ -513,7 +513,7 @@ function inicia(){
             
         </div>
         
-        <div id="ss8" class="hidden chooose">
+        <div id="ss8" class="hidden chooose men">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv7()">
@@ -703,7 +703,7 @@ function inicia(){
     
     <?php } else {?>
     
-        <div id="ss2" class="hidden chooose">
+        <div id="ss2" class="hidden chooose women">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btt1()">
@@ -720,7 +720,7 @@ function inicia(){
             
         </div>
         
-        <div id="ss3" class="hidden chooose">
+        <div id="ss3" class="hidden chooose women">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btu1()">
@@ -736,7 +736,7 @@ function inicia(){
             </div>
             
         </div>
-        <div id="ss4" class="hidden chooose">
+        <div id="ss4" class="hidden chooose women">
            
            <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btu3()">
@@ -753,7 +753,7 @@ function inicia(){
            
         </div>
         
-        <div id="ss5" class="hidden chooose">
+        <div id="ss5" class="hidden chooose women">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv1()">
@@ -770,7 +770,7 @@ function inicia(){
             
         </div>
         
-        <div id="ss6" class="hidden chooose">
+        <div id="ss6" class="hidden chooose women">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="bttv3()">
@@ -787,7 +787,7 @@ function inicia(){
             
         </div>
         
-        <div id="ss7" class="hidden chooose">
+        <div id="ss7" class="hidden chooose women">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv5()">
@@ -804,7 +804,7 @@ function inicia(){
             
         </div>
         
-        <div id="ss8" class="hidden chooose">
+        <div id="ss8" class="hidden chooose women">
             
             <div class="seleccion col-md-6 col-sm-6 col-lg-6 col-xs-6 pull-left">
                 <h1 onClick="btv7()">

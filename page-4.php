@@ -50,6 +50,12 @@ if($g == 'm'){
             <div>Corre cuantas veces quieras, cada carrera suma.</div>
             <div class="clear"></div>
             <small>Sitio optimizado <i class="fa fa-internet-explorer"></i>IE10+, <i class="fa fa-chrome"></i> Chrome, <i class="fa fa-firefox"></i> Firefox y <i class="fa fa-safari"></i> Safari, Versión ajustada para dispositivos móviles <i class="fa fa-android"></i>Android.</small>
+            <div class="separator"></div>
+            <small>Para una mayor experiencia, podrás cambiar la perspectiva de la carrera, presionando los siguientes botones:</small>
+            <ul class="optional">
+                <li><img class="" src="<?php echo get_bloginfo('template_directory');?>/images/primera.png" alt=""></li>
+                <li><img class="" src="<?php echo get_bloginfo('template_directory');?>/images/tercera.png" alt=""></li>
+            </ul>
         </div>
     
     	<img src="<?php echo get_bloginfo('template_directory')?>/images/play.png" alt=""  onClick="iniciar();" class="hidden-md hidden-lg hidden-sm" >
@@ -129,7 +135,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts "></span>
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -217,7 +223,7 @@ if($g == 'm'){
                 <div class="clear"></div>
 <h2>Tu aporte</h2>
 <div class="clear"></div>
-                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts">
+                <img src="<?php echo get_bloginfo('template_directory')?>/images/corazon_cuprum.svg" alt="" class="haarts animated pulse2 infinite">
                 <h3>1</h3>
 <div class="tchare">
                 	<span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span> Compartir</span>
@@ -312,6 +318,11 @@ if($g == 'm'){
             <div>Corre cuantas veces quieras, cada carrera suma.</div>
             <div class="clear"></div>
             <small>Sitio optimizado <i class="fa fa-internet-explorer"></i> IE10+, <i class="fa fa-chrome"></i> Chrome, <i class="fa fa-firefox"></i> Firefox y <i class="fa fa-safari"></i> Safari, Versión ajustada para dispositivos móviles <i class="fa fa-android"></i> Android.</small>
+            <small>Para una mayor experiencia, podrás cambiar la perspectiva de la carrera, presionando los siguientes botones:</small>
+            <ul class="optional">
+                <li><img class="" src="<?php echo get_bloginfo('template_directory');?>/images/primera.png" alt=""></li>
+                <li><img class="" src="<?php echo get_bloginfo('template_directory');?>/images/tercera.png" alt=""></li>
+            </ul>
         </div>
     
     	<img src="<?php echo get_bloginfo('template_directory')?>/images/play.png" alt="" class="hidden-md hidden-lg hidden-sm"  onClick="iniciar();">
@@ -601,7 +612,7 @@ if($g == 'm'){
 	<?php /* <div class="fb-like" data-href="https://www.facebook.com/CuprumAFP" data-width="180" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div> */?>
     
     <span class="btn btn-success fbbb" onClick="FbookShare()"><span class="fa fa-facebook fa-fw"></span><span class="hidden-xs"> Compartir</span></span>
-                	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu tambien por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span><span class="hidden-xs"> Twittear</span></a>
+                	<a onclick="basicPopup(this.href);return false" href="http://twitter.com/share?text=Corre tu también por la Teletón, necesitamos 17 millones de corazones #CorridaVirtualCUPRUM #Teleton @CuprumAFP" class="btn btn-success twww"><span class="fa fa-twitter fa-fw"></span><span class="hidden-xs"> Twittear</span></a>
     
 </div>
 
