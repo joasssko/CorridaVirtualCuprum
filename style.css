@@ -298,11 +298,8 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 .ownaporte .filler {width: 1px; z-index: 0; position: absolute; background-color: #f30; top: 0; left: 20px; bottom: 0; right: 20px; /*margin:0 20px;*/ ;}
 .ownaporte .heart {position: relative; z-index: 1; top: 0; background-image: url(images/corazon_clip_azul.svg);}
 .ownaporte .heart img {
-        animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
-        -webkit-animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
-        -moz-animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
-        -ms-animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
-        -o-animation: pulse2 infinite 0.4s ease-in 0s normal none running ;
+        animation: beat infinite .4s ease-in;
+
 }
 .ownaporte #aporteactual{ font-family:akzidenz, helvetica, arial, sans-serif; font-weight:300; font-size:25px; color:#fff; text-align:center; display:block; background-color:#00336a}
 .ownaporte b {color: #fff; text-align: center; display: block; font-size: 18px; background-color: #e63039; font-weight: 300; font-family: akzidenz, helvetica, arial, sans-serif; padding: 5px 0; }
@@ -338,6 +335,14 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 
 #segundacam{ cursor:pointer;}
 
+#segundacam img{
+        animation: beat infinite 0.4s ease-in;
+        -webkit-animation: beat infinite 0.4s ease-in;
+        -moz-animation: beat infinite 0.4s ease-in;
+        -ms-animation: beat infinite 0.4s ease-in;
+        -o-animation: beat infinite 0.4s ease-in;
+}
+
 
 /*************************************************************************************/
 /***********************************Main**********************************************/
@@ -349,8 +354,8 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 
 #head .runners .personajes {top: 0; }
 #head .selectors .personajes {z-index: 2; }
-#head .runners .personajes.pull-left{ background-image:url(images/run-left.jpg); background-repeat: no-repeat; background-position: bottom center; background-size: 100% auto;}
-#head .runners .personajes.pull-right{background-image:url(images/run-right.jpg); background-repeat: no-repeat; background-position: bottom center; background-size: 100% auto;}
+#head .runners .personajes.pull-left{ background-image:url(images/run-left.jpg); background-repeat: no-repeat; background-position: bottom center; background-size: cover;}
+#head .runners .personajes.pull-right{background-image:url(images/run-right.jpg); background-repeat: no-repeat; background-position: bottom center; background-size: cover;}
 #head .runners .personajes.pull-left:after{background-image: url(images/lines-left.png); background-repeat: no-repeat; background-position: bottom left; content: ''; top: 0; bottom: 0; left: 0; right: 0; position: absolute; }
 #head .runners .personajes.pull-right:after{background-image: url(images/lines-right.png); background-repeat: no-repeat; background-position: bottom right; content: ''; top: 0; bottom: 0; left: 0; right: 0; position: absolute;}
 #head .personajes.pull-right{ right:0; }
@@ -501,7 +506,7 @@ footer img{ margin-right:15px}
 
 .ajax-loader { display: none!important }
 
-
+.underfoot{ background-color:#fff; padding:20px 0}
 /*************************************************************************************/
 /***********************************Responsive Shit***********************************/
 /*************************************************************************************/
@@ -687,6 +692,8 @@ footer img{ margin-right:15px}
     .choose .pull-left h1{padding-right: 5px;}
 
     #segundacam{position: absolute; bottom: 60px; z-index: 1; right:0; }
+
+
     
     #primera img, #segunda img{transition:all .3s ease-in;}
     #primera img:hover, #segunda img:hover{opacity:.8; }
@@ -772,7 +779,7 @@ footer img{ margin-right:15px}
 
 .swing { -webkit-transform-origin: top center; transform-origin: top center; -webkit-animation-name: swing; animation-name: swing;} 
 
-@-webkit-keyframes pulse2 {
+@-webkit-keyframes beat {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -789,7 +796,7 @@ footer img{ margin-right:15px}
   }
 }
 
-@keyframes pulse2 {
+@keyframes beat {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -806,5 +813,5 @@ footer img{ margin-right:15px}
   }
 }
 
-.pulse2 { -webkit-animation-name: pulse2; animation-name: pulse2;}
+.beat { -webkit-animation-name: beat; animation-name: beat;}
 

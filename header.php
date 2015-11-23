@@ -27,18 +27,27 @@
 <!-- scripts -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script>
+// jQuery(window).load(function() {
+// 	jQuery("#loader-wrapper").fadeOut("slow");
+// 	setTimeout(function(){
+// 		// Hide the address bar!
+// 		window.scrollTo(0, 1);
+// 	}, 0);
+// });
+
+// var he = $( window ).height();
+// jQuery( document ).ready(function() {
+// 	jQuery('.home #head').css('height' , he);
+// 	//jQuery('main').css('margin-top' , he);
+// });
 jQuery(window).load(function() {
-	jQuery("#loader-wrapper").fadeOut("slow");
-	setTimeout(function(){
-		// Hide the address bar!
-		window.scrollTo(0, 1);
-	}, 0);
+  jQuery("#loader-wrapper").fadeOut("slow");
 });
 
 var he = $( window ).height();
 jQuery( document ).ready(function() {
-	jQuery('.home #head').css('height' , he);
-	//jQuery('main').css('margin-top' , he);
+  jQuery('.home #head').css('height' , he);
+  //jQuery('main').css('margin-top' , he);
 });
 
 </script>
@@ -104,8 +113,8 @@ function FbookShare(){
 <div id="fb-root"></div>
 
 <div id="loader-wrapper">
-	<?php /* <img src="<?php echo get_bloginfo('template_directory')?>/images/logo.png" alt=""> */?>
-    <div id="loader"></div>
+  <img src="<?php echo get_bloginfo('template_directory')?>/images/loader-corrida.gif" alt="">
+    <?php /* <div id="loader"></div> */?>
 </div>
 
 <div id="aviso" class="hidden-lg hidden-md">
@@ -132,8 +141,8 @@ function FbookShare(){
           <ul class="dropdown-menu">
             <li><a href="">Home</a></li>
             <li><a href="http://www.corridacuprumteleton.cl/como_apoyar.html">¿Cómo ayudar?</a></li>
-            <li><a href="http://www.corridacuprumteleton.cl/galeria.html" re>Galería 2014</a></li>
-            <li><a href="http://www.corridacuprumteleton.cl/inscripcion.html" rel="nofollow">Inscríbete</a></li>
+            <li><a href="http://www.corridacuprumteleton.cl/galeria.html">Galería</a></li>
+            <li><a href="http://corridacuprumteleton.cl/inscripcion_general.html" rel="nofollow">Inscríbete</a></li>
           </ul>
         </div>
         

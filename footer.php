@@ -5,9 +5,9 @@
             	<h3>Website</h3>
                 <ul>
                 	<li><a href="">Home</a></li>
-                	<li><a href="http://www.corridacuprumteleton.cl/galeria.html" re>Galería 2014</a></li>
+                	<li><a href="http://www.corridacuprumteleton.cl/galeria.html">Galería</a></li>
                 	<li><a href="http://www.corridacuprumteleton.cl/como_apoyar.html">¿Cómo ayudar?</a></li>
-                	<li><a href="http://www.corridacuprumteleton.cl/inscripcion.html" rel="nofollow">Inscríbete</a></li>
+                	<li><a href="http://corridacuprumteleton.cl/inscripcion_general.html" rel="nofollow">Inscríbete</a></li>
                 </ul>
             </div>
         	<div class="col-md-4 col-lg-4 col-sm-3 col-xs-7">
@@ -47,7 +47,15 @@
         </div>
     </div>
 </footer>
-
+<div class="underfoot">
+	<div class="container">
+    	<div class="row">
+        
+        	<img src="http://corridacuprumteleton.cl/assets/img/footer_logos.jpg" class="img-responsive" alt="">
+        
+        </div>
+    </div>
+</div>
 </body>
 <?php wp_footer()?>
 </html>
